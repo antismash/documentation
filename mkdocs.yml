@@ -1,0 +1,7 @@
+site_name: antiSMASH Documentation
+pages:
+    - Home: index.md
+    - Getting Started: getting_started.md
+    - Using antiSMASH: using_antismash.md
+    - About: about.md
+theme: readthedocs
