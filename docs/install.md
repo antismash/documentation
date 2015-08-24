@@ -1,12 +1,4 @@
-# Try antiSMASH without installing
-
-The easiest way to get started with antiSMASH is to use [the public web
-version](http://antismash.secondarymetabolites.org/).
-
-
-# Install antiSMASH
-
-At the moment, there are thyree options available to install antiSMASH:
+At the moment, there are three options available to install antiSMASH:
 
   - Using the pre-built Debian installer. This obviously is limited to Debian
     and related distributions.
