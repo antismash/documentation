@@ -89,17 +89,17 @@ single input file.
 
 First, make sure you have the following antiSMASH dependencies installed:
 
-- glimmer (version 3.02 tested)
-- GlimmerHMM (version 3.0.4 tested)
-- hmmer2 (append a 2 to all hmmer2 executables to avoid conflict with hmmer3 executable names, like hmmalign -> hmmalign2)
-- hmmer3
-- fasttree (version 2.1.7 tested)
-- diamond (version 0.7.9 tested)
-- muscle (version 3.8.31 tested)
-- prodigal (version 2.6.1 tested)
-- NCBI blast+ (version 2.2.31 tested)
-- lzma development headers
-- xml development headers
+- [glimmer](https://ccb.jhu.edu/software/glimmer/) (version 3.02 tested)
+- [GlimmerHMM](https://ccb.jhu.edu/software/glimmerhmm/) (version 3.0.4 tested)
+- [hmmer2](http://hmmer.janelia.org/download.html) (version 2.3.2 tested, append a 2 to all hmmer2 executables to avoid conflict with hmmer3 executable names, like hmmalign -> hmmalign2)
+- [hmmer3](http://hmmer.janelia.org/download.html) (version 3.0 and 3.1b2 tested)
+- [fasttree](http://www.microbesonline.org/fasttree/#Install) (version 2.1.7 tested)
+- [diamond](https://github.com/bbuchfink/diamond) (version 0.7.9 tested)
+- [muscle](http://www.drive5.com/muscle/downloads.htm) (version 3.8.31 tested)
+- [prodigal](http://prodigal.ornl.gov/) (version 2.6.1 tested)
+- [NCBI blast+](ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/) (version 2.2.31 tested)
+- [xz](http://tukaani.org/xz/) development headers (version 5.1.1 tested)
+- [xml](http://xmlsoft.org) development headers (version 2.9.1 tested)
 - python (version 2.7 tested, anything >= python 2.6 should work)
 - python-virtualenv (not needed, but highly recommended)
 
