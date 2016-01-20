@@ -5,3 +5,5 @@ pages:
     - Using antiSMASH: using_antismash.md
     - About: about.md
 theme: readthedocs
+markdown_extensions:
+    - footnotes
