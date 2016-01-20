@@ -86,7 +86,7 @@ First, make sure you have the following antiSMASH dependencies installed:
 - [hmmer2](http://hmmer.janelia.org/download.html) (version 2.3.2 tested, append a 2 to all hmmer2 executables to avoid conflict with hmmer3 executable names, like hmmalign -> hmmalign2)
 - [hmmer3](http://hmmer.janelia.org/download.html) (version 3.0 and 3.1b2 tested)
 - [fasttree](http://www.microbesonline.org/fasttree/#Install) (version 2.1.7 tested)
-- [diamond](https://github.com/bbuchfink/diamond) (version 0.7.9 tested)
+- [diamond](https://github.com/bbuchfink/diamond) (> 0.7.9 required, version 0.7.10 tested[^1])
 - [muscle](http://www.drive5.com/muscle/downloads.htm) (version 3.8.31 tested)
 - [prodigal](http://prodigal.ornl.gov/) (version 2.6.1 tested)
 - [NCBI blast+](ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/) (version 2.2.31 tested)
@@ -97,6 +97,10 @@ First, make sure you have the following antiSMASH dependencies installed:
 
 Then, create a python virtualenv for installing the antiSMASH python
 dependencies. This is not required, but highly recommended.
+
+[^1]: DIAMOND 0.7.10 has a bug causing it to always exit with an error state,
+even if it ran successfully. This in turn will cause antiSMASH to log an error.
+This is harmless. If possible, use DIAMOND 0.7.11 once that is released.
 
 ```bash
 virtualenv as3
