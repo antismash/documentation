@@ -59,7 +59,7 @@ chmod a+x ~/bin/run_antismash
 You need the hmmer 3.1 hmmpress tool in your path for this to work.
 ```bash
 mkdir -p /data/databases/pfam && cd /data/databases/pfam
-curl ftp://ftp.sanger.ac.uk/pub/databases/Pfam/current_release/Pfam-A.hmm.gz > Pfam-A.hmm.gz
+curl ftp://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam27.0/Pfam-A.hmm.gz > Pfam-A.hmm.gz
 gunzip Pfam-A.hmm.gz
 hmmpress Pfam-A.hmm
 ```
