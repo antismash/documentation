@@ -100,7 +100,7 @@ dependencies. This is not required, but highly recommended.
 
 [^1]: DIAMOND 0.7.10 has a bug causing it to always exit with an error state,
 even if it ran successfully. This in turn will cause antiSMASH to log an error.
-This is harmless. If possible, use DIAMOND 0.7.11 once that is released.
+This is harmless. If possible, use DIAMOND 0.7.11.
 
 ```bash
 virtualenv as3
