@@ -2,6 +2,7 @@ site_name: antiSMASH Documentation
 pages:
     - Home: index.md
     - Installation: install.md
+    - Running the antiSMASH web service: web_service.md
     - Using antiSMASH: using_antismash.md
     - About: about.md
 theme: readthedocs
