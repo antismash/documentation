@@ -6,9 +6,9 @@ At the moment, there are three options available to install antiSMASH:
     zero-fuss install on any system that can run Docker.
   - Manual install. Most work, but most options to customise your install.
 
-## On Debian Linux
+## On Debian Linux 8
 
-For 64bit AMD/Intel Debian machines, all the required dependencies are available
+For 64bit AMD/Intel Debian 8 machines, all the required dependencies are available
 either from the official Debian repositories, or from the custom antiSMASH
 repository. If you are allowed to `sudo`, installing antiSMASH is as easy as:
 
@@ -16,6 +16,9 @@ repository. If you are allowed to `sudo`, installing antiSMASH is as easy as:
 curl -q https://bitbucket.org/antismash/antismash/downloads/install_deb.sh > install_deb.sh
 bash install_deb.sh
 ```
+
+**Note:** Currently only Debian 8 (jessie) is supported. Packages for Debian 9 (stretch)
+are on the way but still being tested.
 
 ## Using Docker
 
@@ -68,8 +71,8 @@ hmmpress Pfam-A.hmm
 You need GNU tar with xz compression support in your path for this to work.
 ```bash
 mkdir -p /data/databases/clusterblast && cd /data/databases/clusterblast
-curl https://bitbucket.org/antismash/antismash/downloads/clusterblast_dmnd07.tar.xz > clusterblast_dmnd07.tar.xz
-tar -xJf clusterblast_dmnd07.tar.xz
+curl https://dl.secondarymetabolites.org/releases/4.0.0/clusterblast_20170105_v8_31.tar.xz > clusterblast_20170105_v8_31.tar.xz
+tar -xJf clusterblast_20170105_v8_31.tar.xz
 ```
 
 Note that due to the nature of the wrapper script having to do some magic
@@ -81,17 +84,19 @@ single input file.
 
 First, make sure you have the following antiSMASH dependencies installed:
 
+- [diamond](https://github.com/bbuchfink/diamond) (version 0.8.36 tested)
+- [fasttree](http://www.microbesonline.org/fasttree/#Install) (version 2.1.7 tested)
 - [glimmer](https://ccb.jhu.edu/software/glimmer/) (version 3.02 tested)
 - [GlimmerHMM](https://ccb.jhu.edu/software/glimmerhmm/) (version 3.0.4 tested)
 - [hmmer2](http://hmmer.janelia.org/download.html) (version 2.3.2 tested, append a 2 to all hmmer2 executables to avoid conflict with hmmer3 executable names, like hmmalign -> hmmalign2)
-- [hmmer3](http://hmmer.janelia.org/download.html) (version 3.0 and 3.1b2 tested)
-- [fasttree](http://www.microbesonline.org/fasttree/#Install) (version 2.1.7 tested)
-- [diamond](https://github.com/bbuchfink/diamond) (version 0.7.11 tested)
+- [hmmer3](http://hmmer.janelia.org/download.html) (3.1b2 tested)
+- [mafft](http://mafft.cbrc.jp/alignment/software/) (version 7.271 tested)
+- [meme](http://meme-suite.org/meme-software/) (version 4.11.2 tested. **Version 4.11.4 changes output file formats, so don't use that.**)
 - [muscle](http://www.drive5.com/muscle/downloads.htm) (version 3.8.31 tested)
-- [prodigal](http://prodigal.ornl.gov/) (version 2.6.1 tested)
 - [NCBI blast+](ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/) (version 2.2.31 tested)
-- [xz](http://tukaani.org/xz/) development headers (version 5.1.1 tested)
+- [prodigal](http://prodigal.ornl.gov/) (version 2.6.1 tested)
 - [xml](http://xmlsoft.org) development headers (version 2.9.1 tested)
+- [xz](http://tukaani.org/xz/) development headers (version 5.1.1 tested)
 - python (version 2.7.9 tested, any python 2.x >= python 2.6 should work)
 - python-virtualenv (not needed, but highly recommended)
 
@@ -105,14 +110,11 @@ source as3/bin/activate
 ```
 
 All the python dependencies are listed in `requirements.txt`, you can grab them
-all and install them with a simple command[^1]:
+all and install them with a simple command:
 
 ```bash
 pip install -r requirements.txt
 ```
-
-[^1]: Note: BioPython >= 1.67 has a change to previous versions that breaks
-the antiSMASH sequence quality filter. For now, please use BioPython on version 1.65 or 1.66.
 
 Last but not least, run `download_databases.py` to grab and prepare the
 databases:
