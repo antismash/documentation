@@ -1,10 +1,38 @@
 At the moment, there are three options available to install antiSMASH:
 
+  - Using the [Bioconda](https://bioconda.github.io/index.html) distribution.
   - Using the pre-built Debian installer. This obviously is limited to Debian
     and related distributions.
   - Using one of the pre-built Docker images. A slightly larger download, but
     zero-fuss install on any system that can run Docker.
   - Manual install. Most work, but most options to customise your install.
+
+
+## Bioconda
+
+Bioconda is a channel for the [conda](http://conda.pydata.org/docs/intro.html)
+package manager with a focus on bioinformatics software. Once you have [bioconda
+installed](https://bioconda.github.io/index.html), installing antiSMASH is as
+easy as running
+
+```bash
+conda create -n antismash antismash
+source activate antismash
+download-antismash-databases
+source deactivate antismash
+```
+
+This will install antiSMASH in a dedicated conda environment and download the
+PFAM and ClusterBlast databases required for antiSMASH.
+
+Then, if you want to run antiSMASH, simply call
+
+```bash
+source activate antismash
+antismash my_input.gbk
+```
+
+You can use `antismash --help` to show all available options.
 
 ## On Debian Linux 8
 
