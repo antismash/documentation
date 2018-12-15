@@ -4,6 +4,7 @@ pages:
     - Installation: install.md
     - Running the antiSMASH web service: web_service.md
     - Using antiSMASH: using_antismash.md
+    - Glossary: glossary.md
     - About: about.md
 theme: readthedocs
 markdown_extensions:
