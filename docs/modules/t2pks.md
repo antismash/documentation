@@ -1,3 +1,52 @@
+## Module description
+
+The `t2pks` module predicts PKS type II biosynthetic gene cluster details.
+
+### Starter units
+
+The following starter units are detected:
+
+* 2-methylbutyryl-CoA
+* acetyl-CoA
+* anthraniloyl-CoA
+* aziridinyl-CoA
+* benzoyl-CoA
+* butyryl-CoA
+* hexadienyl-CoA
+* hexanoyl-CoA
+* isobutyryl-CoA
+* malonamyl-CoA
+* propionyl-CoA
+
+
+### Malonyl elongation steps
+
+Based on chain length factor classification, the module predicts the number of
+malonyl elongation steps.
+
+### Product class
+
+Based on both the number of malonyl elongations and the detected cyclases, one
+or more product classes are predicted.
+
+The following product classes are detected:
+
+* angucycline
+* anthracycline
+* aureolic acid
+* benzoisochromanequinone
+* pentangular polyphenol
+* tetracenomycin
+* tetracycline
+
+
+### Product molecular weight
+
+Product molecular weights are predicted for all combinations of starter units
+and elongation steps, and modified based on the tailoring enzymes identified in
+the cluster.
+
+
 ## Glossary of PKS type II specific terms
 
 <dl>
