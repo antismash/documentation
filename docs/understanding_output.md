@@ -50,17 +50,26 @@ homologs based on significant Blast hits between them.  In the upper side panel
 on the right. "Predicted core structure", a rough prediction of the overall
 chemical structure of a the product of a detected nonribosomal peptide or
 polyketide biosynthesis gene cluster is given, along with prediction details for
-all monomers.  Prediction details are available for multiple methods. PKS AT
-domain specificities are predicted using a twenty-four amino acid signature
-sequence of the active site (Yadav et al., 2003), as well as with pHMMs based on
-the method of Minowa et al. (Minowa et al., 2007), which is also used to predict
-co-enzyme A ligase domain specificities. NRPS A domain specificities are
-predicted using both the signature sequence method and the support-vector
-machines-based method of NRPSPredictor2 (Rausch et al., 2005 & Röttig et al.,
-2011), and the method of Minowa et al. (Minowa et al., 2007). Ketoreductase
-domain-based stereochemistry predictions for PKSs (Starcevic et al., 2008) are
-also performed.
+all monomers.  Prediction details are available for multiple methods.
 
+PKS type I AT domain specificities are predicted using a twenty-four amino acid
+signature sequence of the active site (Yadav et al., 2003), as well as with
+pHMMs based on the method of Minowa et al. (Minowa et al., 2007), which is also
+used to predict co-enzyme A ligase domain specificities. NRPS A domain
+specificities are predicted using both the signature sequence method and the
+support-vector machines-based method of NRPSPredictor2 (Rausch et al., 2005 &
+Röttig et al., 2011), and the method of Minowa et al. (Minowa et al., 2007).
+Ketoreductase domain-based stereochemistry predictions for PKSs (Starcevic et
+al., 2008) are also performed.
+
+For PKS type II clusters, the side panel shows a list of the predicted starter
+units along with bitscores, a list of the predicted number of malonyl
+elongations along with bitscores, the predicted product class, a list of
+product molecular weights predictions for each combination of starter unit and
+number of malonyl elongations. Furhtermore, it displays each gene/protein which
+are involved in the polyketide biosynthesis of the cluster. For each
+gene/protein the type is indicated and for some a prediction of function is
+displayed.
 
 In the upper right, a small list of buttons offers further functionality. The
 house-shaped button will get you back on the antiSMASH start page. The
