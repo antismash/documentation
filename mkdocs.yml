@@ -9,7 +9,7 @@ nav:
       - Starting command line runs: command_line.md
       - Understanding the output: understanding_output.md
       - Module-specific help:
-        - PKS type II: t2pks.md
+        - PKS type II: modules/t2pks.md
       - FAQ: faq.md
     - Glossary: glossary.md
     - About: about.md
