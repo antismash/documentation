@@ -2,7 +2,7 @@
 
 This is the documentation on running the whole antiSMASH web service setup.  If
 you are just interested in running antiSMASH for yourself, you might not need
-this. Feel free to skip to the guide on [using antiSMASH](using_antismash.md).
+this. Feel free to skip to the guide on [submitting antiSMASH jobs](website_submission.md).
 
 Recently, we have switched the whole setup to run in [docker](https://docker.io/)
 containers. Make sure you have a reasonably recent install of docker.

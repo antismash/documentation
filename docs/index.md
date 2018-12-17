@@ -6,6 +6,7 @@ version](http://antismash.secondarymetabolites.org/).
 
 Look at the [install guide](install.md) for instructions on installing antiSMASH.
 
-See [using antiSMASH](using_antismash.md) for information on how to use antiSMASH and interpret the HTML output.
+See the using antiSMASH section for information on how to [submit antiSMASH jobs](website_submission.md)
+and [interpret the HTML output](understanding_output.md).
 
 The [Glossary](glossary.md) explains some of the abbreviation used in antiSMASH.

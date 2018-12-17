@@ -1,9 +1,14 @@
 site_name: antiSMASH Documentation
-pages:
+nav:
     - Home: index.md
     - Installation: install.md
     - Running the antiSMASH web service: web_service.md
-    - Using antiSMASH: using_antismash.md
+    - Using antiSMASH:
+      - Introduction: intro.md
+      - Submitting jobs on the website: website_submission.md
+      - Starting command line runs: command_line.md
+      - Understanding the output: understanding_output.md
+      - FAQ: faq.md
     - Glossary: glossary.md
     - About: about.md
 theme: readthedocs
