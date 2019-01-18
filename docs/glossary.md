@@ -46,7 +46,7 @@ types can be found below:
   <dt id="glycocin">glycocin</dt>
   <dd>Glycocin cluster</dd>
   <dt id="LAP">LAP</dt>
-  <dd>Goadsporin-like cluster</dd>
+  <dd>Linear azol(in)e-containing peptides</dd>
   <dt id="lassopeptide">lassopeptide</dt>
   <dd>Lasso peptide cluster</dd>
   <dt id="sactipeptide">sactipeptide</dt>
