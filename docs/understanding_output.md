@@ -130,6 +130,9 @@ all monomers.  Prediction details are available for multiple methods.
 
 *For PKS type II clusters, the side panel shows a list of the predicted starter units along with bitscores, a list of the predicted number of malonyl elongations along with bitscores, the predicted product class, a list of product molecular weights predictions for each combination of starter unit and number of malonyl elongations. Furhtermore, it displays each gene/protein which are involved in the polyketide biosynthesis of the cluster. For each gene/protein the type is indicated and for some a prediction of function is displayed. More details on the predictions can be found [here](modules/t2pks.md).*
 
+A chemical structure is displayed for NRPS and Type I PKS metabolites, which is derived by combining the results of the domain analyses. 
+
+**IMPORTANT NOTE: This is a structure prediction of the core structure of the molecule; VERY VERY likely the final molecule will be different!** 
 
 ### Downloading results
 
