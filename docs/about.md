@@ -8,41 +8,21 @@ secondary metabolite analysis tools that have been published earlier.
 antiSMASH is powered by several open source tools: NCBI BLAST+, HMMer 3, Muscle
 3, Glimmer 3, FastTree, TreeGraph 2, Indigo-depict, PySVG and JQuery SVG.
 
-antiSMASH is the product of a collaborative effort between the Department of
-Microbial Physiology and Groningen Bioinformatics Centre of the University of
-Groningen, the Department of Microbiology of the University of Tübingen, the
-Synthetic Biology and Computational and Evolutionary Biology groups at the
-Faculty of Life Sciences at the University of Manchester and the Department of
-Bioengineering and Therapeutic Sciences at the University of California, San
-Francisco.
+# antiSMASH contributors
+antiSMASH is an international collaboration project, which was initially started by the labs of Wolfgang Wohlleben (University Tübignen) and Eriko Takano and Rainer Breitling (University Groningen/Manchester). Currently, the project is coordinated by Marnix Medema (University of Wageningen) and Tilmann Weber/Kai Blin (Technical University of Denmark) with numerous collaborators all over the world. 
 
-antiSMASH is supported by the GenBiotics program of the Dutch Technology
-Foundation (STW), which is the applied-science division of The Netherlands
-Organisation for Scientific Research (NWO) and the Technology Programme of the
-Ministry of Economic Affairs (grant STW 10463) as well as the GenBioCom program
-of the German Ministry of Education and Research (BMBF) grant 0315585A.
+List of contributors
 
 # How to cite
 
 If you have found antiSMASH useful, please cite:
 
-antiSMASH 3.0 — a comprehensive resource for the genome mining of biosynthetic
-gene clusters<br>
-Tilmann Weber, Kai Blin, Srikanth Duddela, Daniel Krug, Hyun Uk
-Kim, Robert Bruccoleri, Sang Yup Lee, Michael A. Fischbach, Rolf Müller,
-Wolfgang Wohlleben, Rainer Breitling, Eriko Takano & Marnix H. Medema<br>
-Nucleic Acids Research (2015) doi: 10.1093/nar/gkv437.
+* Blin, K., Wolf, T., Chevrette, M.G., Lu, X., Schwalen, C.J., Kautasar, S.A., Suarez Duran, H.G., de los Santos, E.L.C., Kim, H.U., Nave, M., et al. (2017). antiSMASH 4.0—improvements in chemistry prediction and gene cluster boundary identification. Nucleic Acids Res 45, W36-W41.
+* Weber, T., Blin, K., Duddela, S., Krug, D., Kim, H.U., Bruccoleri, R., Lee, S.Y., Fischbach, M.A., Müller, R., Wohlleben, W., et al. (2015). antiSMASH 3.0-a comprehensive resource for the genome mining of biosynthetic gene clusters. Nucleic Acids Res 43, W237-W243.
+* Blin, K., Medema, M.H., Kazempour, D., Fischbach, M., Breitling, R., Takano, E., and Weber, T. (2013). antiSMASH 2.0 – a versatile platform for genome mining of secondary metabolite producers. Nucleic Acids Res 41, W204-W212.
+M* edema, M.H., Blin, K., Cimermancic, P., de Jager, V., Zakrzewski, P., Fischbach, M.A., Weber, T., Takano, E., and Breitling, R. (2011). antiSMASH: rapid identification, annotation and analysis of secondary metabolite biosynthesis gene clusters in bacterial and fungal genome sequences. Nucleic Acids Res 39, W339-W346.
 
-antiSMASH 2.0 — a versatile platform for genome mining of secondary metabolite
-producers.<br>
-Kai Blin, Marnix H. Medema, Daniyal Kazempour, Michael A.
-Fischbach, Rainer Breitling, Eriko Takano, & Tilmann Weber<br>
-Nucleic Acids Research (2013) doi: 10.1093/nar/gkt449.
-
-antiSMASH: Rapid identification, annotation and analysis of secondary
-metabolite biosynthesis gene clusters.<br>
-Marnix H. Medema, Kai Blin, Peter
-Cimermancic, Victor de Jager, Piotr Zakrzewski, Michael A. Fischbach, Tilmann
-Weber, Rainer Breitling & Eriko Takano<br>
-Nucleic Acids Research (2011) doi:10.1093/nar/gkr466
-
+# Further reading
+* Villebro, R., Shaw, S., Blin, K., and Weber, T. (2019). Sequence-based classification of type II polyketide synthase biosynthetic gene clusters for antiSMASH. J Ind Microbiol Biotechnol, doi: 10.1007/s10295-10018-02131-10299.
+* Blin, K., Kim, H.U., Medema, M.H., and Weber, T. (2017). Recent development of antiSMASH and other computational approaches to mine secondary metabolite biosynthetic gene clusters. Brief Bioinform, doi: 10.1093/bib/bbx1146.
+* Blin, K., Kazempour, D., Wohlleben, W., and Weber, T. (2014). Improved lanthipeptide detection and prediction for antiSMASH. PLoS ONE 9, e89420.
