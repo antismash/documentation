@@ -1,17 +1,18 @@
 site_name: antiSMASH Documentation
 nav:
     - Home: index.md
-    - Installation: install.md
-    - Running the antiSMASH web service: web_service.md
     - Using antiSMASH:
       - Introduction: intro.md
       - Submitting jobs on the website: website_submission.md
-      - Starting command line runs: command_line.md
       - Understanding the output: understanding_output.md
-      - Module-specific help:
-        - NRPS/PKS domains: modules/nrps_pks_domains.md
-        - PKS type II: modules/t2pks.md
-      - FAQ: faq.md
+    - Module-specific help:
+       - NRPS/PKS domains: modules/nrps_pks_domains.md
+       - PKS type II: modules/t2pks.md
+    - Local antiSMASH installation:
+        - Installation: install.md
+        - Starting command line runs: command_line.md
+        - Running local instances of the antiSMASH web service: web_service.md
+    - FAQ: faq.md
     - Glossary: glossary.md
     - About: about.md
 theme: readthedocs
