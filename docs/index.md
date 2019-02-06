@@ -16,8 +16,3 @@ The [Glossary](glossary.md) and [FAQ](faq.md) explain some of the abbreviation u
 
 Look at the [install guide](install.md) for instructions on installing antiSMASH.
 
-### Local installation of an antiSMASH webserver
-
-Look at the [web server installation guide](web_service.md) for instructions on how to install a local antiSMASH webserver.
-
-

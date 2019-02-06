@@ -12,7 +12,6 @@ nav:
     - Local antiSMASH installation:
         - Installation: install.md
         - Starting command line runs: command_line.md
-        - Running local instances of the antiSMASH web service: web_service.md
     - FAQ: faq.md
     - Glossary: glossary.md
     - About: about.md
