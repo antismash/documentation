@@ -11,7 +11,7 @@ in different panels for every gene cluster
 
 Initially, a list of identified regions (containing the clusters) is displayed in the results page. A region can be selected for viewing by clicking its number (gene clusters
 are numbered in the order in which they appear on the input nucleotide sequence, starting from 1 for each record in the uploaded data)
-in the "identified secondary metabolite regions" panel just below the top banner or by clicking on the colored "Cluster X.YY" boxes. A click on "Overview" brings you back to the
+in the "identified secondary metabolite regions" panel just below the top banner or by clicking on the colored "Region X.YY" boxes. A click on "Overview" brings you back to the
 overview list.  Gene cluster buttons are color coded by predicted secondary
 metabolite type.
 
@@ -20,70 +20,71 @@ metabolite type.
 Currently, there is no good method available to accurately predict gene cluster borders purely based on the submitted sequence data (with exception with the CASSIS algorithm that can detect co-regulated genes in fungal genomes – however CASSIS doesn’t work in prokaryotes)
 Therefore, antiSMASH5 changed the way gene clusters are displayed – to reflect the fact that the BGC borders are just offsets defined in the cluster detection rules we renamed the highest level that is displayed to “Region”. 
 
-A “Region” in antiSMASH 5 corresponds to the “Gene Cluster” annotation in antiSMASH 4 and below.
-How are antiSMASH 5 regions defined?
-In the first step, all gene products of the analyzed sequence are searched against a database of highly conserved enzyme HMM profiles (core-enzymes), which are indicative of a specific BGC type.
-In a second step, pre-defined cluster rules are employed to define individual “Clusters” encoded in the Region.
+A “region” in antiSMASH 5 corresponds to the “gene cluster” annotation in antiSMASH 4 and below.
+
+###How are antiSMASH 5 regions defined?
+
+In the first step, all gene products of the analyzed sequence are searched against a database of highly conserved enzyme HMM profiles (core-enzymes), which are indicative of a specific BGC type. In a second step, pre-defined cluster rules are employed to define individual “protolusters” encoded in the region. These make up a *core*, which is extended by tis *neighborhood*, which constiutes of genes encoded up- and downstream of the *core*.
+
 As an example an excerpt of the cluster rules to detect type I PKS:
 
 ![Exemplary cluster rule](img/clusterrules.png)
 
-Whenever antiSMASH finds a gene coding for a protein that has as PKS AT domain and a PKS KS domain of various sub-types, antiSMASH, a new “Type I PKS Cluster” feature is generated within the region; this feature comprises the core gene-product(s) that trigger the rule (i.e. the PKS encoding genes and extends to the left and right of the core genes by 20 kb to the left and right (as defined by the EXTENT parameter in the rule definition). The values for the different cluster types are empirically determined and generally tend to rather overpredict, i.e. included also adjacent genes.
-After the “Cluster” features are assigned (note: there can be multiple cluster features in a region!!), they are checked for overlaps (as defined by the CUTOFF parameter) and are grouped into several types of “Supercluster” to reflect the observation that many BGCs actually comprise several classes of biosynthetic machinery. For example Glycopeptides like vancomycin or balhimycin (shown) are synthesized via NRPS, but also contain a type III PKS as a precursor pathway.
+Whenever antiSMASH finds a gene coding for a protein that has as PKS AT domain and a PKS KS domain of various sub-types, antiSMASH, a new “Type I PKS *protocluster*” feature is generated within the region; this feature comprises the *core* gene-product(s) that trigger the rule (i.e. the PKS encoding genes and extends the *neighborhood* to the left and right of the core genes by 20 kb to the left and right (as defined by the EXTENT parameter in the rule definition). The values for the different cluster types are empirically determined and generally tend to rather overpredict, i.e. included also adjacent genes.
+After the *protocluster* features are assigned (note: there can be multiple protocluster features in a region!!), they are checked for overlaps (as defined by the CUTOFF parameter) and are grouped into several types of *candidate clusters* to reflect the observation that many BGCs actually comprise several classes of biosynthetic machinery. For example glycopeptides like vancomycin or balhimycin (shown) are synthesized via NRPS, but also contain a type III PKS as a precursor pathway.
 
 
 ![Balhimycin biosynthetic gene cluster](img/bal-cluster.png)
 
-Thus, the displayed region contains the “nrps-cluster” (green bar) and a “type III PKS cluster” yellow bar. As their extents overlap, they are assigned to *Candidate Clusters*.
+Thus, the displayed region contains the “nrps-protocluster” (green bar) and a “type III PKS protocluster” yellow bar. As their extents overlap, they are assigned to *candidate clusters*.
 
-###There are different types of Candidate Clusteters:
+###There are different types of candidate clusteters:
 
 ```
 "chemical hybrid":
-contains clusters which share Cluster-defining CDSFeatures,
-will also include clusters within that shared range that do
+contains protoclusters which share cluster-defining CDS/genes/gene products,
+will also include protoclusters within that shared range that do
 not share a CDS provided that they are completely contained within
 the supercluster border, e.g.
-       ---##A###############C#---   <- Cluster 1 with definition CDSes A and C
-        --##A##--                   <- Cluster 2 with definition CDS A
-                 --#B#--            <- Cluster 3 with definition CDS B
-                         --#C#--    <- Cluster 4 with definition CDS C
-                              -#D#- <- Cluster 5 with definition CDS D
-Since clusters 1 and 2 share a CDS that defines those clusters, a
-chemical hybrid supercluster exists. Clusters 1 and 4 also share a defining
-CDS, so the hybrid supercluster now contains clusters 1, 2 and 4.
+       ---##A###############C#---   <- Protocluster 1 with definition CDSes A and C
+        --##A##--                   <- Protocluster 2 with definition CDS A
+                 --#B#--            <- Protocluster 3 with definition CDS B
+                         --#C#--    <- Protocluster 4 with definition CDS C
+                              -#D#- <- Protocluster 5 with definition CDS D
+Since protoclusters 1 and 2 share a CDS that defines those clusters, a
+chemical hybrid supercluster exists. Protoclusters 1 and 4 also share a defining
+CDS, so the hybrid candidate cluster now contains protoclusters 1, 2 and 4.
 
-Cluster 3 does not share a defining CDS with either cluster 1, 2 or 4,
+Protocluster 3 does not share a defining CDS with either cluster 1, 2 or 4,
 but because it is interleaved into a chemical hybrid it is included
-under the assumption that it is relevant to the other clusters. 
+under the assumption that it is relevant to the other protoclusters. 
 
 "interleaved":
-contains clusters which do not share Cluster-defining CDS features,
+contains protoclusters which do not share cluster-defining CDS features,
 but their core locations overlap, e.g.
-       ---#A###A###A---      <- Cluster 1 with defining CDSes marked A
-          ---B##B####B---    <- Cluster 2 with defining CDSes marked B
-                 ---C###C--- <- Cluster 3 with defining CDSes marked C
-Since none of the clusters share any defining CDS with any other cluster,
-it is not a chemical hybrid. All three clusters would be part of an
-interleaved "Candidate Cluster", since A overlaps with B and B overlaps with C.
+       ---#A###A###A---      <- Protocluster 1 with defining CDSes marked A
+          ---B##B####B---    <- Protocluster 2 with defining CDSes marked B
+                 ---C###C--- <- Protocluster 3 with defining CDSes marked C
+Since none of the clusters share any defining CDS with any other protocluster,
+it is not a chemical hybrid. All three protoclusters would be part of an
+interleaved "candidate cluster", since A overlaps with B and B overlaps with C.
 
  
 "neighbouring":
-contains clusters which transitively overlap in their neighbourhoods
+contains protoclusters which transitively overlap in their neighbourhoods
 (the '-' sections in the examples above). In the chemical hybrid example,
-as all clusters overlap in some way, all 5 would be part of a neighbouring
-supercluster (with clusters 1-4 also being part of a hybrid supercluster).
-Every cluster in a 'neighbouring' cluster will also belong to one of the
-other kinds of "Candidate Clusters".
+as all protoclusters overlap in some way, all 5 would be part of a neighbouring
+"candidate cluster" (with protoclusters 1-4 also being part of a hybrid "candidate cluster").
+Every protocluster in a "neighbouring candidate cluster" will also belong to one of the
+other kinds of "candidate clusters".
 
 "single":
-the kind for all "Candidate Clusters" where only one cluster is
+the kind for all "candidate clusters" where only one protocluster is
 contained, only exists for consistency of access. A 'single' 
-"Candidate Cluster" will not exist for a cluster which is
-contained in either a chemical hybrid or an interleaved "Candidate Cluster".
-In the chemical hybrid example, only cluster 5 would be in
-a 'single' supercluster as well as in the 'neighbouring'
-"Candidate Cluster".
+"candidate cluster" will not exist for a protocluster which is
+contained in either a chemical hybrid or an interleaved "candidate cluster".
+In the chemical hybrid example, only protocluster 5 would be in
+a "single" candidate cluster as well as in the "neighbouring candidate cluster".
 
 ```
 
