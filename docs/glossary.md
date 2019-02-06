@@ -1,6 +1,3 @@
-Glossary
-========
-
 Cluster Types
 -------------
 
