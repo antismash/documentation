@@ -12,6 +12,7 @@ nav:
     - Local antiSMASH installation:
         - Installation: install.md
         - Starting command line runs: command_line.md
+    - antiSMASH5 feature list: antiSMASH5features.md
     - FAQ: faq.md
     - Glossary: glossary.md
     - About: about.md
