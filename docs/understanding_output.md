@@ -39,9 +39,10 @@ After the *protocluster* features are assigned (note: there can be multiple prot
 Thus, the displayed region contains the “nrps-protocluster” (green bar) and a “type III PKS protocluster” yellow bar. As their extents overlap, they are assigned to *candidate clusters*.
 
 ###There are different types of candidate clusteters:
+![Figure candidate clusters](img/regionLogic.png)
 
 ```
-"chemical hybrid":
+"chemical hybrid" (case A):
 contains protoclusters which share cluster-defining CDS/genes/gene products,
 will also include protoclusters within that shared range that do
 not share a CDS provided that they are completely contained within
@@ -59,7 +60,7 @@ Protocluster 3 does not share a defining CDS with either cluster 1, 2 or 4,
 but because it is interleaved into a chemical hybrid it is included
 under the assumption that it is relevant to the other protoclusters. 
 
-"interleaved":
+"interleaved" (case B):
 contains protoclusters which do not share cluster-defining CDS features,
 but their core locations overlap, e.g.
        ---#A###A###A---      <- Protocluster 1 with defining CDSes marked A
@@ -70,7 +71,7 @@ it is not a chemical hybrid. All three protoclusters would be part of an
 interleaved "candidate cluster", since A overlaps with B and B overlaps with C.
 
  
-"neighbouring":
+"neighbouring" (case C):
 contains protoclusters which transitively overlap in their neighbourhoods
 (the '-' sections in the examples above). In the chemical hybrid example,
 as all protoclusters overlap in some way, all 5 would be part of a neighbouring
@@ -78,7 +79,7 @@ as all protoclusters overlap in some way, all 5 would be part of a neighbouring
 Every protocluster in a "neighbouring candidate cluster" will also belong to one of the
 other kinds of "candidate clusters".
 
-"single":
+"single" (case D):
 the kind for all "candidate clusters" where only one protocluster is
 contained, only exists for consistency of access. A 'single' 
 "candidate cluster" will not exist for a protocluster which is
