@@ -22,6 +22,7 @@ types can be found below:
 |<span id="nrps-like"><span id="nrpsfragment">nrps-like</span></span>|NRPS-like fragment|5.0|5.0|
 |<span id="terpene">terpene</span>|Terpene|&lt;= 3.0|4.1|
 |<span id="lantipeptide"><span id="lanthipeptide">lanthipeptide</span></span>|Lanthipeptide cluster|4.2|5.0|
+|<span id="lipolanthine">lipolanthine</span>|Lanthipeptide class containing N-terminal fatty acids|5.0|5.0|
 |<span id="bacteriocin">bacteriocin</span>|Bacteriocin or other unspecified ribosomally synthesised and post-translationally modified peptide product (RiPP) cluster|4.1|5.0|
 |<span id="betalactone">betalactone</span>|beta-lactone containing protease inhibitor|5.0|5.0|
 |<span id="thiopeptide">thiopeptide</span>|Thiopeptide cluster|4.2|5.0|
