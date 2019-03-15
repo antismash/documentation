@@ -13,6 +13,7 @@ types can be found below:
 |<span id="transatpks"><span id="transat-pks">transAT-PKS</span></span>|Trans-AT PKS|&lt;= 3.0|5.0|
 |<span id="ppys-ks"><span id="ppysks">PpyS-KS</span></span>|PPY-like pyrone cluster|4.2|4.2|
 |<span id="hgle-ks"><span id="hgleks">hglE-KS</span></span>|heterocyst glycolipid synthase-like PKS|5.0|5.0|
+|<span id="cdps">CDPS</span>|tRNA-dependent cyclodipeptide synthases|5.0|5.0|
 |<span id="pks-like">PKS-like</span>|Other types of PKS cluster|5.0|5.0|
 |<span id="arylpolyene">arylpolyene</span>|Aryl polyene cluster|&lt;= 3.0|&lt;= 3.0|
 |<span id="resorcinol">resorcinol</span>|Resorcinol cluster|&lt;= 3.0|&lt;= 3.0|
@@ -54,6 +55,7 @@ types can be found below:
 |<span id="fused">fused</span>|Pheganomycin-style protein ligase-containing cluster|4.0|4.0|
 |<span id="pbde">PBDE</span>|Polybrominated diphenyl ether cluster|4.1|4.1|
 |<span id="acyl_amino_acids">acyl_amino_acids</span>|N-acyl amino acid cluster|4.0|4.1|
+|<span id="naggn">NAGGN</span>|N-acetylglutaminylglutamine amide|5.0|5.0|
 |<span id="RaS-RiPP">RaS-RiPP</span>|Streptide-like thioether-bond RiPPs|5.0|5.0|
 |<span id="fungal-RiPP">fungal-RiPP</span>|Fungal RiPP with POP or UstH peptidase types and a modification|5.0|5.0|
 |<span id="other">other</span>|Cluster containing a secondary metabolite-related protein that does not fit into any other category|4.0|5.0|

@@ -17,12 +17,15 @@
 | ClusterFinder fatty acid |
 | ClusterFinder Saccharide |
 | Cyanobactins |
+| Cyclodipeptide synthase-based tRNA dependent peptides |
 | (Dialkyl)resorcinols |
 | Ectoines |
+| fungal RiPPs |
 | Furan |
 | Fused (Pheganomycin-like) |
 | Glycocin |
 | Head-to-tail cyclised peptide |
+| Heterocyst glycolipid synthase like PKS |
 | Homoserine lactone |
 | Indoles |
 | Ladderane lipids |
@@ -30,13 +33,14 @@
 | Lasso peptide |
 | Linaridin |
 | Linear azol(in)e-containing peptides (LAPs) |
+| Lipolanthines |
 | Melanins |
 | Microviridin |
+| N-acetylglutaminylglutamine amides |
 | N-acyl amino acids |
 | Non-ribosomal peptides |
 | Nucleosides |
 | Oligosaccharide |
-| Other (unusual) PKS |
 | Others |
 | Phenazine |
 | Phosphoglycolipids |
@@ -45,6 +49,7 @@
 | Polyunsaturated fatty acids |
 | Proteusin |
 | Pseudopyronines |
+| RaS RiPPs |
 | Sactipeptide |
 | Siderophores |
 | Terpene |
