@@ -11,6 +11,7 @@ types can be found below:
 |<span id="t2pks">T2PKS</span>|Type II PKS|&lt;= 3.0|5.0|
 |<span id="t2pks">T3PKS</span>|Type III PKS|&lt;= 3.0|&lt;= 3.0|
 |<span id="transatpks"><span id="transat-pks">transAT-PKS</span></span>|Trans-AT PKS|&lt;= 3.0|5.0|
+|<span id="transatpks-like"><span id="transat-pks-like">transAT-PKS</span></span>|Trans-AT PKS fragment, with trans-AT domain not found|&lt;= 5.0|5.0|
 |<span id="ppys-ks"><span id="ppysks">PpyS-KS</span></span>|PPY-like pyrone cluster|4.2|4.2|
 |<span id="hgle-ks"><span id="hgleks">hglE-KS</span></span>|heterocyst glycolipid synthase-like PKS|5.0|5.0|
 |<span id="cdps">CDPS</span>|tRNA-dependent cyclodipeptide synthases|5.0|5.0|
