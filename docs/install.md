@@ -10,6 +10,8 @@ At the moment, there are three options available to install antiSMASH:
 
 ## Bioconda
 
+**Note:** Bioconda at the moment still provides antiSMASH 4.1.0, not the new version 5. We are hoping to fix this soon.
+
 Bioconda is a channel for the [conda](http://conda.pydata.org/docs/intro.html)
 package manager with a focus on bioinformatics software. Once you have [bioconda
 installed](https://bioconda.github.io/index.html), installing antiSMASH is as
@@ -34,9 +36,11 @@ antismash my_input.gbk
 
 You can use `antismash --help` to show all available options.
 
-## On Debian Linux 8
+## On Debian Linux 9
 
-For 64bit AMD/Intel Debian 8 machines, all the required dependencies are available
+**Note:** We are still working on an antiSMASH 5 installer script.
+
+For 64bit AMD/Intel Debian 9 machines, all the required dependencies are available
 either from the official Debian repositories, or from the custom antiSMASH
 repository. If you are allowed to `sudo`, installing antiSMASH is as easy as:
 
@@ -45,13 +49,12 @@ curl -q https://bitbucket.org/antismash/antismash/downloads/install_deb.sh > ins
 bash install_deb.sh
 ```
 
-**Note:** Currently only Debian 8 (jessie) is supported. Packages for Debian 9 (stretch)
-are on the way but still being tested.
-
 ## Using Docker
 
 If you're not on Debian, but don't want to bother with the full-blown
 installation, there are two docker images you can use.
+
+**Note:** We are still working on antiSMASH 5 docker images.
 
 ### antiSMASH standalone
 
@@ -68,8 +71,7 @@ run_antismash <input file> <output directory> [antismash options]
 
 Note that due to the nature of the wrapper script having to do some magic
 mapping between your system and the container, you always need to provide input
-file and output directory first, and in that order. You also can only provide a
-single input file.
+file and output directory first, and in that order.
 
 ### antiSMASH standalone-lite
 
@@ -105,48 +107,63 @@ tar -xJf clusterblast_20170105_v8_31.tar.xz
 
 Note that due to the nature of the wrapper script having to do some magic
 mapping between your system and the container, you always need to provide input
-file and output directory first, and in that order. You also can only provide a
-single input file.
+file and output directory first, and in that order.
 
 ## Manual install
 
 First, make sure you have the following antiSMASH dependencies installed:
 
-- [diamond](https://github.com/bbuchfink/diamond) (version 0.8.36 tested)
-- [fasttree](http://www.microbesonline.org/fasttree/#Install) (version 2.1.7 tested)
-- [glimmer](https://ccb.jhu.edu/software/glimmer/) (version 3.02 tested)
+- [diamond](https://github.com/bbuchfink/diamond) (version 0.8.36 tested, 0.9 series versions should work as well)
+- [fasttree](http://www.microbesonline.org/fasttree/#Install) (version 2.1.9 tested)
 - [GlimmerHMM](https://ccb.jhu.edu/software/glimmerhmm/) (version 3.0.4 tested)
 - [hmmer2](http://hmmer.janelia.org/download.html) (version 2.3.2 tested, append a 2 to all hmmer2 executables to avoid conflict with hmmer3 executable names, like hmmalign -> hmmalign2)
 - [hmmer3](http://hmmer.janelia.org/download.html) (3.1b2 tested)
-- [mafft](http://mafft.cbrc.jp/alignment/software/) (version 7.271 tested)
+- [mafft](http://mafft.cbrc.jp/alignment/software/) (version 7.307 tested)
 - [meme](http://meme-suite.org/meme-software/) (version 4.11.2 tested. **Version 4.11.4 changes output file formats, so don't use that.**)
 - [muscle](http://www.drive5.com/muscle/downloads.htm) (version 3.8.31 tested)
-- [NCBI blast+](ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/) (version 2.2.31 tested)
-- [prodigal](http://prodigal.ornl.gov/) (version 2.6.1 tested)
-- [xml](http://xmlsoft.org) development headers (version 2.9.1 tested)
-- [xz](http://tukaani.org/xz/) development headers (version 5.1.1 tested)
-- python (version 2.7.9 tested, any python 2.x >= python 2.6 should work)
+- [NCBI blast+](ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/) (version 2.6.0 tested)
+- [prodigal](http://prodigal.ornl.gov/) (version 2.6.3 tested)
+- python (version 3.5.3 tested, any version >= 3.5.0 should work)
 - python-virtualenv (not needed, but highly recommended)
 
 Then, create a python virtualenv for installing the antiSMASH python
 dependencies. This is not required, but highly recommended.
 
-
 ```bash
-virtualenv as3
-source as3/bin/activate
+virtualenv --python $(which python3) as5
+source as5/bin/activate
 ```
 
-All the python dependencies are listed in `requirements.txt`, you can grab them
-all and install them with a simple command:
+Next, obtain a copy of the antiSMASH source code. We don't have any final release of antiSMASH 5 yet,
+so either clone the antiSMASH 5 git repository:
 
 ```bash
-pip install -r requirements.txt
+git clone https://github.com/antismash/antismash.git
+cd antismash
 ```
 
-Last but not least, run `download_databases.py` to grab and prepare the
+or grab a zip file of the development tree by opening https://github.com/antismash/antismash/ in your
+browser, clicking the "clone or download" button and selecting "Download ZIP" there.
+
+
+All the python dependencies are specified in the `setup.py` file, so you can just run the install
+from the antiSMASH source code directory:
+
+```bash
+pip install .
+```
+
+Then, run `download-antismash-databases` to grab and prepare the
 databases:
 
 ```bash
-python download_databases.py
+download-antismash-databases
 ```
+
+To check all of the dependencies are installed and antiSMASH can find them, run:
+
+```bash
+antismash --check-prereqs
+```
+
+If antiSMASH prints "All prerequisites satisfied", you're good to go.
