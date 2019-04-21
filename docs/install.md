@@ -113,12 +113,11 @@ file and output directory first, and in that order.
 
 First, make sure you have the following antiSMASH dependencies installed:
 
-- [diamond](https://github.com/bbuchfink/diamond) (version 0.8.36 tested, 0.9 series versions should work as well)
+- [diamond](https://github.com/bbuchfink/diamond) (versions 0.8.36, 0.9.17, and 0.9.24 tested, we recommended the 0.9 series)
 - [fasttree](http://www.microbesonline.org/fasttree/#Install) (version 2.1.9 tested)
 - [GlimmerHMM](https://ccb.jhu.edu/software/glimmerhmm/) (version 3.0.4 tested)
 - [hmmer2](http://hmmer.janelia.org/download.html) (version 2.3.2 tested, append a 2 to all hmmer2 executables to avoid conflict with hmmer3 executable names, like hmmalign -> hmmalign2)
 - [hmmer3](http://hmmer.janelia.org/download.html) (3.1b2 tested)
-- [mafft](http://mafft.cbrc.jp/alignment/software/) (version 7.307 tested)
 - [meme](http://meme-suite.org/meme-software/) (version 4.11.2 tested. **Version 4.11.4 changes output file formats, so don't use that.**)
 - [muscle](http://www.drive5.com/muscle/downloads.htm) (version 3.8.31 tested)
 - [NCBI blast+](ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/) (version 2.6.0 tested)
