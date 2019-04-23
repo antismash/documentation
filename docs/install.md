@@ -51,20 +51,18 @@ bash install_deb.sh
 
 ## Using Docker
 
-If you're not on Debian, but don't want to bother with the full-blown
+If you're not on Debian, but don't want to bother with the full-blown manual
 installation, there are two docker images you can use.
-
-**Note:** We are still working on antiSMASH 5 docker images.
 
 ### antiSMASH standalone
 
 This image includes all the required databases, no further configuration needed.
-It is a ~7 GB download at the moment. If you have docker installed, just grab
+It is a ~9 GB download at the moment. If you have docker installed, just grab
 the wrapper script and get going:
 
 ```bash
 mkdir ~/bin    # not required if you already have that
-curl -q https://bitbucket.org/antismash/docker/raw/HEAD/standalone/run_antismash > ~/bin/run_antismash
+curl -q https://dl.secondarymetabolites.org/releases/latest/docker-run_antismash-full > ~/bin/run_antismash
 chmod a+x ~/bin/run_antismash
 run_antismash <input file> <output directory> [antismash options]
 ```
@@ -84,30 +82,27 @@ First, grab the wrapper script:
 
 ```bash
 mkdir ~/bin    # not required if you already have that
-curl -q https://bitbucket.org/antismash/docker/raw/HEAD/standalone-lite/run_antismash > ~/bin/run_antismash
+curl -q https://dl.secondarymetabolites.org/releases/latest/docker-run_antismash-lite > ~/bin/run_antismash
 chmod a+x ~/bin/run_antismash
 ```
 
-#### Installing the PFAM database
-You need the hmmer 3.1 hmmpress tool in your path for this to work.
-```bash
-mkdir -p /data/databases/pfam && cd /data/databases/pfam
-curl ftp://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam27.0/Pfam-A.hmm.gz > Pfam-A.hmm.gz
-gunzip Pfam-A.hmm.gz
-hmmpress Pfam-A.hmm
-```
+The easiest way to download the antiSMASH databases is using the database downloader script.
+Again the wrapper script assumes your databases live in `/data/databases`. If you want to use
+a different location, just provide that to the `download_antismash_databases` script as the parameter.
 
-#### Installing the ClusterBlast database
-You need GNU tar with xz compression support in your path for this to work.
 ```bash
-mkdir -p /data/databases/clusterblast && cd /data/databases/clusterblast
-curl https://dl.secondarymetabolites.org/releases/4.0.0/clusterblast_20170105_v8_31.tar.xz > clusterblast_20170105_v8_31.tar.xz
-tar -xJf clusterblast_20170105_v8_31.tar.xz
+curl -q https://dl.secondarymetabolites.org/releases/latest/download_antismash_databases > ~/bin/download_antismash_databases
+chmod a+x ~/bin/download_antismash_databases
+download_antismash_databases
 ```
 
 Note that due to the nature of the wrapper script having to do some magic
 mapping between your system and the container, you always need to provide input
-file and output directory first, and in that order.
+file and output directory first, and in that order:
+
+```bash
+run_antismash <input file> <output directory> [antismash options]
+```
 
 ## Manual install
 
