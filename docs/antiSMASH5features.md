@@ -54,6 +54,7 @@
 | Siderophores |
 | Terpene |
 | Thiopeptide |
+| Thioamide-containing non-ribosomal peptides |
 | Trans-AT type I PKS |
 | Type I PKS |
 | Type II PKS |
