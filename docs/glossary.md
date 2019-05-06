@@ -20,9 +20,9 @@ types can be found below:
 |<span id="resorcinol">resorcinol</span>|Resorcinol cluster|&lt;= 3.0|&lt;= 3.0|
 |<span id="ladderane">ladderane</span>|Ladderane cluster|&lt;= 3.0|&lt;= 3.0|
 |<span id="pufa">PUFA</span>|Polyunsaturated fatty acid cluster|&lt;= 3.0|&lt;= 3.0|
-|<span id="nrps">nrps</span>|Nonribosomal peptide synthetase cluster|&lt;= 3.0|&lt;= 3.0|
+|<span id="nrps">nrps</span>|Non-ribosomal peptide synthetase cluster|&lt;= 3.0|&lt;= 3.0|
 |<span id="nrps-like"><span id="nrpsfragment">nrps-like</span></span>|NRPS-like fragment|5.0|5.0|
-|<span id="thioamide-NRP">thioamide-NRP</span>|thioamide-containing nonribosomal peptide|5.0|5.0|
+|<span id="thioamide-NRP">thioamide-NRP</span>|thioamide-containing non-ribosomal peptide|5.0|5.0|
 |<span id="terpene">terpene</span>|Terpene|&lt;= 3.0|4.1|
 |<span id="lantipeptide"><span id="lanthipeptide">lanthipeptide</span></span>|Lanthipeptide cluster|4.2|5.0|
 |<span id="lipolanthine">lipolanthine</span>|Lanthipeptide class containing N-terminal fatty acids|5.0|5.0|
