@@ -60,7 +60,7 @@ and non-ribosomal peptide synthase (NRPS) related functions.
 |TIGR02353||NRPS terminal domain of unknown function|[TIGRFams](http://tigrfams.jcvi.org/cgi-bin/HmmReportPage.cgi?acc=TIGR02353)
 |Tra_KS | KS | Trans-acyltransferase ketosynthase|[Yadav et al. 2009](#Yadav2009)
 |Trans-AT_docking | | Trans-acyltransferase docking domain| [Medema et al. 2011](#Medema2011)
-|X | X | Putatively inactive glycopeptide condensation-like domain| [Medema et al. 2011](#Medema2011)
+|X | X | Glycopeptide-specific NRPS domain responsible for oxygenase recruitment| [Medema et al. 2011](#Medema2011)
 
 
 <span id="Rausch2007">
