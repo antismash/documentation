@@ -62,13 +62,16 @@ types can be found below:
 |<span id="RaS-RiPP">RaS-RiPP</span>|Streptide-like thioether-bond RiPPs|5.0|5.0|
 |<span id="fungal-RiPP">fungal-RiPP</span>|Fungal RiPP with POP or UstH peptidase types and a modification|5.0|5.0|
 |<span id="other">other</span>|Cluster containing a secondary metabolite-related protein that does not fit into any other category|4.0|5.0|
-|<span id="cf_saccharide">cf_saccharide</span>|Possible saccharide cluster|&lt;= 3.0|&lt;= 3.0|
-|<span id="cf_fatty_acid">cf_fatty_acid</span>|Possible fatty acid cluster|&lt;= 3.0|4.2|
+|<span id="saccharide">saccharide</span>|Saccharide cluster (loose strictness, likely from primary metabolism)|&lt;= 3.0|&lt;= 3.0|
+|<span id="fatty_acid">fatty_acid</span>|Fatty acid cluster (loose strictness, likely from primary metabolism)|&lt;= 3.0|4.2|
+|<span id="halogenase">halogenase</span>|Cluster containing a halogenase|5.0|5.0|
 
 ###Obsolete/Previous Types
 |Label|Description|Added|Removed|Notes|
 |-----|-----------|:---:|:-----:|-----|
 |<span id="otherks">otherks</span>|Other types of PKS cluster|&lt;= 3.0|5.0|Split into *PKS-like* and *hglE-KS*|
 |<span id="microcin">microcin</span>|Microcin cluster|&lt;= 3.0|5.0|Merged into *lasso peptide*|
+|<span id="cf_saccharide">cf_saccharide</span>|Possible saccharide cluster|&lt;= 3.0|5.0|Renamed to *saccharide*|
+|<span id="cf_fatty_acid">cf_fatty_acid</span>|Possible fatty acid cluster|&lt;= 3.0|5.0|Renamed to *fatty_acid*|
 |<span id="cf_putative">cf_putative</span>|Putative cluster of unknown type identified with the ClusterFinder algorithm|&lt;= 3.0|5.0|These predictions are now subregions, not clusters|
 
