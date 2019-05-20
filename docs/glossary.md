@@ -64,7 +64,7 @@ types can be found below:
 |<span id="other">other</span>|Cluster containing a secondary metabolite-related protein that does not fit into any other category|4.0|5.0|
 |<span id="saccharide">saccharide</span>|Saccharide cluster (loose strictness, likely from primary metabolism)|&lt;= 3.0|&lt;= 3.0|
 |<span id="fatty_acid">fatty_acid</span>|Fatty acid cluster (loose strictness, likely from primary metabolism)|&lt;= 3.0|4.2|
-|<span id="halogenase">halogenase</span>|Cluster containing a halogenase|5.0|5.0|
+|<span id="halogenated">halogenated</span>|Cluster containing a halogenase and thus potentially generating a halogenated product|5.0|5.0|
 
 ###Obsolete/Previous Types
 |Label|Description|Added|Removed|Notes|
