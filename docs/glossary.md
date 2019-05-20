@@ -57,6 +57,7 @@ types can be found below:
 |<span id="fused">fused</span>|Pheganomycin-style protein ligase-containing cluster|4.0|4.0|
 |<span id="pbde">PBDE</span>|Polybrominated diphenyl ether cluster|4.1|4.1|
 |<span id="acyl_amino_acids">acyl_amino_acids</span>|N-acyl amino acid cluster|4.0|4.1|
+|<span id="tropodithietic-acid">tropodithietic-acid</span>|Tropodithietic acid cluster|5.0|5.0|
 |<span id="naggn">NAGGN</span>|N-acetylglutaminylglutamine amide|5.0|5.0|
 |<span id="RaS-RiPP">RaS-RiPP</span>|Streptide-like thioether-bond RiPPs|5.0|5.0|
 |<span id="fungal-RiPP">fungal-RiPP</span>|Fungal RiPP with POP or UstH peptidase types and a modification|5.0|5.0|
