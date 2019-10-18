@@ -24,7 +24,7 @@ A “region” in antiSMASH 5 corresponds to the “gene cluster” annotation i
 
 ###How are antiSMASH 5 regions defined?
 
-In the first step, all gene products of the analyzed sequence are searched against a database of highly conserved enzyme HMM profiles (core-enzymes), which are indicative of a specific BGC type. In a second step, pre-defined cluster rules are employed to define individual “protolusters” encoded in the region. These make up a *core*, which is extended by tis *neighborhood*, which constiutes of genes encoded up- and downstream of the *core*.
+In the first step, all gene products of the analyzed sequence are searched against a database of highly conserved enzyme HMM profiles (core-enzymes), which are indicative of a specific BGC type. In a second step, pre-defined cluster rules are employed to define individual “protoclusters” encoded in the region. These make up a *core*, which is extended by tis *neighborhood*, which constiutes of genes encoded up- and downstream of the *core*.
 
 As an example an excerpt of the cluster rules to detect type I PKS:
 
