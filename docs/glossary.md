@@ -59,8 +59,8 @@ types can be found below:
 |<span id="acyl_amino_acids">acyl_amino_acids</span>|N-acyl amino acid cluster|4.0|4.1|
 |<span id="tropodithietic-acid">tropodithietic-acid</span>|Tropodithietic acid cluster|5.0|5.0|
 |<span id="naggn">NAGGN</span>|N-acetylglutaminylglutamine amide|5.0|5.0|
-|<span id="RaS-RiPP">RaS-RiPP</span>|Streptide-like thioether-bond RiPPs|5.0|5.0|
-|<span id="fungal-RiPP">fungal-RiPP</span>|Fungal RiPP with POP or UstH peptidase types and a modification|5.0|5.0|
+|<span id="ras-ripp">RaS-RiPP</span>|Streptide-like thioether-bond RiPPs|5.0|5.0|
+|<span id="fungal-ripp">fungal-RiPP</span>|Fungal RiPP with POP or UstH peptidase types and a modification|5.0|5.0|
 |<span id="tfua-related">TfuA-related</span>|TfuA-related RiPPs|5.1|5.1|
 |<span id="other">other</span>|Cluster containing a secondary metabolite-related protein that does not fit into any other category|4.0|5.0|
 |<span id="saccharide">saccharide</span>|Saccharide cluster (loose strictness, likely from primary metabolism)|&lt;= 3.0|&lt;= 3.0|
