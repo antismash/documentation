@@ -89,7 +89,7 @@ the cluster.
   <dt id="KSIII">KSIII</dt>
   <dd>Non-acetate starter unit ketosynthase III</dd>
   <dt id="ACP">ACP</dt>
-  <dd>acetyl carrier proteing</dd>
+  <dd>acetyl carrier protein</dd>
   <dt id="KR">KR</dt>
   <dd>ketoreductase
     <dl>
