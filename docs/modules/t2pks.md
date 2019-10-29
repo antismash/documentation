@@ -50,6 +50,14 @@ the cluster.
 ## Glossary of PKS type II specific terms
 
 <dl>
+  <dt id="ACP">ACP</dt>
+  <dd>acetyl carrier protein</dd>
+  <dt id="AMID">AMID</dt>
+  <dd>amidase</dd>
+  <dt id="AMIN">AMIN</dt>
+  <dd>aminase</dd>
+  <dt id="AT">AT</dt>
+  <dd>acyltransferase</dd>
   <dt id="CLF">CLF</dt>
   <dd>chain length factor
     <dl>
@@ -61,35 +69,35 @@ the cluster.
     <dd>extending by 11 or 12 units</dd>
     </dl>
   </dd>
-  <dt id="AT">AT</dt>
-  <dd>acetyl transferase</dd>
   <dt id="CYC">CYC</dt>
   <dd>cyclase
     <dl>
       <dt id="CYC_C7-C12">CYC_C7-C12</dt>
-      <dd>connecting carbons 7 and 12</dd>
+      <dd>connecting carbon 7 to 12</dd>
       <dt id="CYC_C5-C14">CYC_C5-C14</dt>
-      <dd>connecting carbons 5 and 14</dd>
+      <dd>connecting carbon 5 to 14</dd>
       <dt id="CYC_C5-C14/C3-C16">CYC_C5-C14/C3-C16</dt>
-      <dd>connecting carbons 5 or 3 and 14 or 16, respectively</dd>
+      <dd>connecting carbon 5 to 13 or carbon 3 to 16</dd>
       <dt id="CYC_C1-C18|C2-C19">CYC_C1-C18|C2-C19</dt>
-      <dd>connecting carbons 1 or 2 and 18 or 19, respectively</dd>
+      <dd>connecting carbon 1 to 18 or carbon 2 to 19</dd>
       <dt id="CYC_C2-C19">CYC_C2-C19</dt>
-      <dd>connecting carbons 2 and 19</dd>
+      <dd>connecting carbon 2 to 19</dd>
       <dt id="CYC_C5-C18">CYC_C5-C18</dt>
-      <dd>connecting carbons 5 and 18</dd>
+      <dd>connecting carbon 5 to 18</dd>
       <dt id="CYC_C4-C17/C2-C19">CYC_C4-C17/C2-C19</dt>
-      <dd>connecting carbons 4 or 2 and 17 or 19, respectively</dd>
+      <dd>connecting carbon 4 to 17 or carbon 2 to 19</dd>
       <dt id="CYC_C4-C21/C2-C23|C2-C19">CYC_C4-C21/C2-C23|C2-C19</dt>
-      <dd>connecting carbons 4 or 2 and 21, 23, or 19, respectively</dd>
+      <dd>connecting carbon 4 to 21, carbon 2 to 23, or carbon 2 to 19</dd>
       <dt id="CYC_C9-C14">CYC_C9-C14</dt>
-      <dd>connecting carbons 9 and 14</dd>
+      <dd>connecting carbon 9 to 14</dd>
     </dl>
   </dd>
-  <dt id="KSIII">KSIII</dt>
-  <dd>Non-acetate starter unit ketosynthase III</dd>
-  <dt id="ACP">ACP</dt>
-  <dd>acetyl carrier protein</dd>
+  <dt id="DIMER">DIMER</dt>
+  <dd>dimerase</dd>
+  <dt id="GT">GT</dt>
+  <dd>glycosyltransferase</dd>
+  <dt id="HAL">HAL</dt>
+  <dd>halogenase</dd>
   <dt id="KR">KR</dt>
   <dd>ketoreductase
     <dl>
@@ -107,10 +115,10 @@ the cluster.
   </dd>
   <dt id="KS">KS</dt>
   <dd>ketosynthase</dd>
-  <dt id="OXY">OXY</dt>
-  <dd>oxygenase</dd>
-  <dt id="GT">GT</dt>
-  <dd>glycosyltransferase</dd>
+  <dt id="KSIII">KSIII</dt>
+  <dd>Non-acetate starter unit ketosynthase III</dd>
+  <dt id="LIG">LIG</dt>
+  <dd>ligase</dd>
   <dt id="MET">MET</dt>
   <dd>methyltransferase
     <dl>
@@ -132,14 +140,6 @@ the cluster.
     <dd>O-methyltransferase acting on the oxygen at carbon 18</dd>
     </dl>
   </dd>
-  <dt id="DIMER">DIMER</dt>
-  <dd>dimerase</dd>
-  <dt id="LIG">LIG</dt>
-  <dd>ligase</dd>
-  <dt id="HAL">HAL</dt>
-  <dd>halogenase</dd>
-  <dt id="AMIN">AMIN</dt>
-  <dd>aminase</dd>
-  <dt id="AMID">AMID</dt>
-  <dd>amidase</dd>
+  <dt id="OXY">OXY</dt>
+  <dd>oxygenase</dd>
 </dl>
