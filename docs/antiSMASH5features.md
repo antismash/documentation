@@ -115,7 +115,11 @@ Note: This function is only available in the download/locally run version
 | Genbank |
 | HTML |
 | JSON results file |
-| Input file formats |
+
+## Input file formats
+
+| Format |
+| ------ |
 | FASTA (nucleotide) |
 | FASTA + GFF3 |
 | Genbank |
