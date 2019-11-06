@@ -16,6 +16,11 @@ nav:
     - FAQ: faq.md
     - Glossary: glossary.md
     - About: about.md
-theme: readthedocs
+theme:
+    name: readthedocs
+    custom_dir: custom_theme
 markdown_extensions:
     - footnotes
+plugins:
+  - search
+  - git-revision-date
