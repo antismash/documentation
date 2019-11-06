@@ -8,6 +8,7 @@ nav:
     - Module-specific information:
        - BGC detection: clusterrules.md
        - NRPS/PKS domains: modules/nrps_pks_domains.md
+       - NRPS/PKS modules: modules/nrps_pks_modules.md
        - PKS type II: modules/t2pks.md
     - Local antiSMASH installation:
         - Installation: install.md
