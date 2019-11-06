@@ -13,6 +13,24 @@ antiSMASH is an international collaboration project, which was initially started
 
 List of contributors
 
+* Kai Blin
+* Robert Bruccoleri
+* Zach Charlop-Powers
+* Marc Chevrette
+* Emzo de los Santos
+* Srikanth Duddela
+* Nikos Ignatiadis
+* Satria Kautsar
+* Hyun Uk Kim
+* Xiaowen Lu
+* Marnix Medema
+* Simon Shaw
+* Katherina Steinke
+* Hache Suarez
+* Rasmus Villebro
+* Tilmann Weber
+* Thomas Wolf
+
 # How to cite
 
 If you have found antiSMASH useful, please cite:
