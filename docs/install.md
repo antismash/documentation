@@ -55,7 +55,7 @@ then install the binaries themselves
 ```bash
 sudo apt-get install hmmer2 hmmer diamond-aligner fasttree prodigal ncbi-blast+ muscle glimmerhmm
 ```
-(if you want to use CASSIS and agree to the MEME license: http://meme-suite.org/doc/copyright.html, add `meme-suite` to that list)
+If you want to use CASSIS or the full RODEO analysis for RiPPs and agree to the [MEME license](http://meme-suite.org/doc/copyright.html), add `meme-suite` to that list.
 
 * Download and extract the antiSMASH source (using version 5.1 as an example):
 ```bash
