@@ -1,6 +1,6 @@
 At the moment, there are three options available to install antiSMASH:
 
-  - Using the [Bioconda](https://bioconda.github.io/index.html) distribution.
+  - Using the [Bioconda](https://bioconda.github.io/index.html) distribution (currently limited to version 4.1).
   - Using the pre-built Debian installer. This obviously is limited to Debian
     and related distributions.
   - Using one of the pre-built Docker images. A slightly larger download, but
@@ -10,7 +10,7 @@ At the moment, there are three options available to install antiSMASH:
 
 ## Bioconda
 
-**Note:** Bioconda at the moment still provides antiSMASH 4.1.0, not the new version 5. We are hoping to fix this soon.
+**Note:** Bioconda at the moment still provides antiSMASH 4.1.0, not the new version 5.
 
 Bioconda is a channel for the [conda](http://conda.pydata.org/docs/intro.html)
 package manager with a focus on bioinformatics software. Once you have [bioconda
@@ -36,17 +36,56 @@ antismash my_input.gbk
 
 You can use `antismash --help` to show all available options.
 
-## On Debian Linux 9
+## On Debian/Ubuntu Linux
 
-**Note:** We are still working on an antiSMASH 5 installer script.
-
-For 64bit AMD/Intel Debian 9 machines, all the required dependencies are available
+For 64bit AMD/Intel Debian or Ubuntu machines, all the required dependencies are available
 either from the official Debian repositories, or from the custom antiSMASH
-repository. If you are allowed to `sudo`, installing antiSMASH is as easy as:
+repository.
 
+* Install binary dependencies:
+   First add the antiSMASH debian repository:
 ```bash
-curl -q https://bitbucket.org/antismash/antismash/downloads/install_deb.sh > install_deb.sh
-bash install_deb.sh
+sudo apt-get update
+sudo apt-get install -y apt-transport-https
+sudo wget http://dl.secondarymetabolites.org/antismash-stretch.list -O /etc/apt/sources.list.d/antismash.list
+sudo wget -q -O- http://dl.secondarymetabolites.org/antismash.asc | apt-key add -
+sudo apt-get update
+```
+then install the binaries themselves
+```bash
+sudo apt-get install hmmer2 hmmer diamond-aligner fasttree prodigal ncbi-blast+ muscle glimmerhmm
+```
+(if you want to use CASSIS and agree to the MEME license: http://meme-suite.org/doc/copyright.html, add `meme-suite` to that list)
+
+* Download and extract the antiSMASH source (using version 5.1 as an example):
+```bash
+wget https://dl.secondarymetabolites.org/releases/5.1.0/antismash-5.1.0.tar.gz
+tar -zxf 5-1-0.tar.gz
+```
+
+* Create and activate a virtual environment (this can be skipped, but is highly recommended)
+```bash
+virtualenv -p $(which python3) as5env
+source as5env/bin/activate
+```
+* Install antiSMASH (again, using 5.1 as an example, the name will match the download step):
+```bash
+pip install antismash-5-1-0
+download-antismash-databases
+```
+
+We recommend running the prerequisite check to make sure everything is as expected with
+```bash
+antismash --check-prereqs
+```
+
+If you want to see the available command line options, use
+```bash
+antismash --help
+```
+or, for a full list of all available options, including debug options
+```bash
+antismash --help-showall
 ```
 
 ## Using Docker
@@ -120,44 +159,5 @@ First, make sure you have the following antiSMASH dependencies installed:
 - python (version 3.5.3 tested, any version >= 3.5.0 should work)
 - python-virtualenv (not needed, but highly recommended)
 
-Then, create a python virtualenv for installing the antiSMASH python
-dependencies. This is not required, but highly recommended.
-
-```bash
-virtualenv --python $(which python3) as5
-source as5/bin/activate
-```
-
-Next, obtain a copy of the antiSMASH source code. We don't have any final release of antiSMASH 5 yet,
-so either clone the antiSMASH 5 git repository:
-
-```bash
-git clone https://github.com/antismash/antismash.git
-cd antismash
-```
-
-or grab a zip file of the development tree by opening https://github.com/antismash/antismash/ in your
-browser, clicking the "clone or download" button and selecting "Download ZIP" there.
-
-
-All the python dependencies are specified in the `setup.py` file, so you can just run the install
-from the antiSMASH source code directory:
-
-```bash
-pip install .
-```
-
-Then, run `download-antismash-databases` to grab and prepare the
-databases:
-
-```bash
-download-antismash-databases
-```
-
-To check all of the dependencies are installed and antiSMASH can find them, run:
-
-```bash
-antismash --check-prereqs
-```
-
-If antiSMASH prints "All prerequisites satisfied", you're good to go.
+Then follow the instructions from the Debian install section,
+starting after the binary installation step.
