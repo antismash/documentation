@@ -60,7 +60,7 @@ If you want to use CASSIS or the full RODEO analysis for RiPPs and agree to the 
 * Download and extract the antiSMASH source (using version 5.1 as an example):
 ```bash
 wget https://dl.secondarymetabolites.org/releases/5.1.0/antismash-5.1.0.tar.gz
-tar -zxf 5-1-0.tar.gz
+tar -zxf antismash-5-1-0.tar.gz
 ```
 
 * Create and activate a virtual environment (this can be skipped, but is highly recommended)
