@@ -48,7 +48,7 @@ repository.
 sudo apt-get update
 sudo apt-get install -y apt-transport-https
 sudo wget http://dl.secondarymetabolites.org/antismash-stretch.list -O /etc/apt/sources.list.d/antismash.list
-sudo wget -q -O- http://dl.secondarymetabolites.org/antismash.asc | apt-key add -
+sudo wget -q -O- http://dl.secondarymetabolites.org/antismash.asc | sudo apt-key add -
 sudo apt-get update
 ```
 then install the binaries themselves
