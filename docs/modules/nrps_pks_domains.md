@@ -50,6 +50,7 @@ and non-ribosomal peptide synthase (NRPS) related functions.
 |PKS_ER | ER | Enoylreductase domain|[SMART](http://smart.embl.de/smart/do_annotation.pl?DOMAIN=SM00829)
 |PKS_KR | KR | Ketoreductase domain|[SMART](http://smart.embl.de/smart/do_annotation.pl?DOMAIN=SM00822)
 |PKS_KS | KS | Ketosynthase domain|[SMART](http://smart.embl.de/smart/do_annotation.pl?DOMAIN=SM00825)
+|PKS_PP | | Phosphopantetheine acyl carrier protein group (new in 5.1.1)| [SMART](http://smart.embl.de/smart/do_annotation.pl?DOMAIN=SM00823)
 |Polyketide_cyc2 | | Polyketide cyclase/dehydratase| [Pfam](https://pfam.xfam.org/family/PF10604.2)
 |Polyketide_cyc | | Polyketide cyclase| [Pfam](https://pfam.xfam.org/family/PF03364.13)
 |PS | PS | Pyran synthase domain|[Blin et al. 2017](#Blin2017)
