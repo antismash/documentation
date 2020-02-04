@@ -140,7 +140,7 @@ brew install hmmer2 hmmer diamond fasttree prodigal blast muscle brewsci/science
 Unfortunately, Homebrew doesn't fix the file name conflicts between the hmmer and hmmer2 packages,
 so to have both tools available, run the following:
 ```bash
-export HMMER2_BINDIR="$(brew config | grep HOMEBREW_PREFIX | cut -d: -f2)/opt/hmmer2/bin"
+export HMMER2_BINDIR="$(brew --prefix)/opt/hmmer2/bin"
 export BREW_BINDIR="$(dirname $(brew link -n hmmer2 | head -n2 | tail -n1))"
 pushd ${BREW_BINDIR}
 for FNAME in ${HMMER2_BINDIR}/*; do
