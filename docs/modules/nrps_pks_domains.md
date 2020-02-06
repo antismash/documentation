@@ -42,9 +42,9 @@ and non-ribosomal peptide synthase (NRPS) related functions.
 |oMT | oMT | Oxygen methyltransferase|[Ansari et al. 2008](#Ansari2008)
 |PCP | | Peptidyl-carrier protein domain| [Medema et al. 2011](#Medema2011)
 |PKS_AT | AT | Acyltransferase domain|[SMART](http://smart.embl.de/smart/do_annotation.pl?DOMAIN=SM00827)
-|PKS_DH | DH | Dehydrogenase domain|[SMART](http://smart.embl.de/smart/do_annotation.pl?DOMAIN=SM00826)
-|PKS_DH2 | DH | Dehydrogenase domain (avoids false positive PS domains)|
-|PKS_DHt | DHt | Dehydrogenase domain variant more commonly found in trans-AT PKS clusters |
+|PKS_DH | DH | Dehydratase domain|[SMART](http://smart.embl.de/smart/do_annotation.pl?DOMAIN=SM00826)
+|PKS_DH2 | DH | Dehydratase domain (avoids false positive PS domains)|
+|PKS_DHt | DHt | Dehydratase domain variant more commonly found in trans-AT PKS clusters |
 |PKS_Docking_Cterm | | PKS C-terminal docking domain| [Medema et al. 2011](#Medema2011)
 |PKS_Docking_Nterm | | PKS N-terminal docking domain| [Medema et al. 2011](#Medema2011)
 |PKS_ER | ER | Enoylreductase domain|[SMART](http://smart.embl.de/smart/do_annotation.pl?DOMAIN=SM00829)
