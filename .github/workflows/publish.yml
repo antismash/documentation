@@ -28,6 +28,7 @@ jobs:
         chmod 600 ~/.ssh/id_ed25519
         echo "${{secrets.SSH_KNOWN_HOSTS}}" > ~/.ssh/known_hosts
         chmod 600 ~/.ssh/known_hosts
+        eval $(ssh-agent)
         export DISPLAY=1
         echo "${{secrets.SSH_PASSPHRASE}}" | SSH_ASKPASS=/usr/bin/cat ssh-add ~/.ssh/id_ed25519
         rsync --delete -avuP -e ssh site/ deploys@front01.secondarymetabolites.org:/var/www/as-docs/
