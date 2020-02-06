@@ -8,7 +8,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Check out the repository
+      run: /usr/bin/git clone https://github.com/${GITHUB_REPOSITORY}.git ${GITHUB_WORKSPACE}
     - name: Setup Python environment
       uses: actions/setup-python@v1.1.1
       with:
