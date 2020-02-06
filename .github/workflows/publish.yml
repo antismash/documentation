@@ -29,6 +29,9 @@ jobs:
         echo "${{secrets.SSH_KNOWN_HOSTS}}" > ~/.ssh/known_hosts
         chmod 600 ~/.ssh/known_hosts
         eval $(ssh-agent)
+        echo "exec cat" > ap-cat.sh
+        chmod a+x ap-cat.sh
         export DISPLAY=1
-        echo "${{secrets.SSH_PASSPHRASE}}" | SSH_ASKPASS=$(which cat) ssh-add ~/.ssh/id_ed25519
+        echo "${{secrets.SSH_PASSPHRASE}}" | SSH_ASKPASS=./ap-cat.sh ssh-add ~/.ssh/id_ed25519
+        rm ap-cat.sh
         rsync --delete -avuP -e ssh site/ deploys@front01.secondarymetabolites.org:/var/www/as-docs/
