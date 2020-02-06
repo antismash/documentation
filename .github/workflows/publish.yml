@@ -24,11 +24,10 @@ jobs:
       run: |
         mkdir ~/.ssh
         chmod 700 ~/.ssh
-        echo ${secrets.SSH_KEY} > ~/.ssh/id_ed25519
+        echo ${{secrets.SSH_KEY}} > ~/.ssh/id_ed25519
         chmod 600 ~/.ssh/id_ed25519
-        echo ${secrets.SSH_KNOWN_HOSTS} > ~/.ssh/known_hosts
+        echo ${{secrets.SSH_KNOWN_HOSTS}} > ~/.ssh/known_hosts
         chmod 600 ~/.ssh/known_hosts
         export DISPLAY=1
-        echo ${secrets.SSH_PASSPHRASE} | SSH_ASKPASS=/usr/bin/cat ssh-add ~/.ssh/id_ed25519
+        echo ${{secrets.SSH_PASSPHRASE}} | SSH_ASKPASS=/usr/bin/cat ssh-add ~/.ssh/id_ed25519
         rsync --delete -avuP -e ssh site/ deploys@front01.secondarymetabolites.org:/var/www/as-docs/
-        
