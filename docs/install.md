@@ -1,5 +1,6 @@
-At the moment, there are two options available to install antiSMASH:
+At the moment, there are thre options available to install antiSMASH:
 
+  - Using the Bioconda package.
   - Using one of the pre-built Docker images. A slightly larger download, but
     zero-fuss install on any system that can run Docker.
   - A manual install, with three options to get the required dependencies:
@@ -8,6 +9,27 @@ At the moment, there are two options available to install antiSMASH:
       - Using the [Bioconda](https://bioconda.github.io/index.html) distribution.
       - Full manual install. Most work, but most options to customise your install.
 
+
+## Using Bioconda
+
+Bioconda is a channel for the [conda](http://conda.pydata.org/docs/intro.html)
+package manager with a focus on bioinformatics software. Once you have [bioconda
+installed](https://bioconda.github.io/index.html), installing antiSMASH is as
+easy as running
+
+```bash
+conda create -n antismash antismash
+conda activate antismash
+download-antismash-databases
+conda deactivate
+```
+
+Later, if you want to run antiSMASH, simply call
+
+```bash
+conda activate antismash
+antismash my_input.gbk
+```
 
 ## Using Docker
 
@@ -95,12 +117,9 @@ After the dependencies are installed, [create a Python virtual environment](#cre
 
 ### Dependencies via Bioconda
 
-**Note:** Bioconda has an antiSMASH package directly, but that's still version 4.1.0, not the new version 5, so don't use that.
-
 Bioconda is a channel for the [conda](http://conda.pydata.org/docs/intro.html)
 package manager with a focus on bioinformatics software. Once you have [bioconda
-installed](https://bioconda.github.io/index.html), installing antiSMASH is as
-easy as running
+installed](https://bioconda.github.io/index.html), install the dependencies:
 
 ```bash
 conda create -n antismash
@@ -109,10 +128,7 @@ conda install hmmer2 hmmer diamond fasttree prodigal blast muscle glimmerhmm
 ```
 
 If you want to use CASSIS or the full RODEO analysis for RiPPs and agree to the [MEME license](http://meme-suite.org/doc/copyright.html),
-you should also install MEME. Unfortunately, conda does not provide a MEME 4.11.2 build that is installable in a Python3 environment.
-We can't use more recent versions of MEME because the MEME developers drastically changed output formats and only the 4.11.2 version was
-confirmed to work with CASSIS. You will have to install a C compiler and follow the official install instructions for
-[meme](http://meme-suite.org/doc/install.html?man_type=web).
+also run `conda install meme==4.11.2`.
 
 Later, if you want to run antiSMASH, simply call
 
@@ -202,7 +218,7 @@ Now, continue with [installing the latest antiSMASH release](#installing-the-lat
 * Download and extract the antiSMASH source (using version 5.1 as an example):
 ```bash
 wget https://dl.secondarymetabolites.org/releases/5.1.1/antismash-5.1.1.tar.gz
-tar -zxf antismash-5-1-1.tar.gz
+tar -zxf antismash-5.1.1.tar.gz
 ```
 
 * Install antiSMASH (again, using 5.1 as an example, the name will match the download step):
