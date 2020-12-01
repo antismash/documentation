@@ -18,7 +18,7 @@ installed](https://bioconda.github.io/index.html), installing antiSMASH is as
 easy as running
 
 ```bash
-conda create -n antismash antismash
+conda create -n antismash antismash biopython=1.77
 conda activate antismash
 download-antismash-databases
 conda deactivate
