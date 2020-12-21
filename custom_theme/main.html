@@ -5,7 +5,7 @@
 <p>{% if config.copyright %}
 <small>{{ config.copyright }}<br></small>
 {% endif %}
-{% if page.meta.revision_date %}
+{% if page and page.meta.revision_date %}
 <small><br><i>Updated {{ page.meta.revision_date }}</i></small>
 {% endif %}
 </p>
