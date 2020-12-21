@@ -29,3 +29,5 @@ markdown_extensions:
 plugins:
   - search
   - git-revision-date
+extra_css:
+  - css/extra.css
