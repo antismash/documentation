@@ -26,17 +26,17 @@ types can be found below:
 |<span id="terpene">terpene</span>|Terpene|&lt;= 3.0|4.1|
 |<span id="lantipeptide"><span id="lanthipeptide">lanthipeptide</span></span>|Lanthipeptide cluster|4.2|5.0|
 |<span id="lipolanthine">lipolanthine</span>|Lanthipeptide class containing N-terminal fatty acids|5.0|5.0|
-|<span id="bacteriocin">bacteriocin</span>|Bacteriocin or other unspecified ribosomally synthesised and post-translationally modified peptide product (RiPP) cluster|4.1|5.0|
+|<span id="ripp-like">RiPP-like</span>|Other unspecified ribosomally synthesised and post-translationally modified peptide product (RiPP) cluster|4.1|6.0|
 |<span id="betalactone">betalactone</span>|beta-lactone containing protease inhibitor|5.0|5.0|
 |<span id="thiopeptide">thiopeptide</span>|Thiopeptide cluster|4.2|5.0|
 |<span id="linaridin">linaridin</span>|Linaridin cluster|&lt;= 3.0|&lt;= 3.0|
-|<span id="cyanobactin">cyanobactin</span>|Cyanobactin cluster|&lt;= 3.0|&lt;= 3.0|
+|<span id="cyanobactin">cyanobactin</span>|Cyanobactins like patellamide (AY986476)|&lt;= 3.0|6.0|
 |<span id="glycocin">glycocin</span>|Glycocin cluster|&lt;= 3.0|&lt;= 3.0|
-|<span id="lap">LAP</span>|Linear azol(in)e-containing peptides|&lt;= 3.0|5.0|
+|<span id="guanidinotides">guanidinotides</span>|Pheganomycin-style protein ligase-containing cluster|4.0|6.0|
+|<span id="lap">LAP</span>|Linear azol(in)e-containing peptides|&lt;= 3.0|6.0|
 |<span id="lassopeptide">lassopeptide</span>|Lasso peptide cluster|&lt;= 3.0|5.0|
-|<span id="sactipeptide">sactipeptide</span>|Sactipeptide cluster|&lt;= 3.0|4.0|
+|<span id="sactipeptide">sactipeptide</span>|Sactipeptide cluster|&lt;= 3.0|6.0|
 |<span id="bottromycin">bottromycin</span>|Bottromycin cluster|&lt;= 3.0|&lt;= 3.0|
-|<span id="head_to_tail">head_to_tail</span>|Head-to-tail cyclised (subtilosin-like) cluster|&lt;= 3.0|&lt;= 3.0|
 |<span id="microviridin">microviridin</span>|Microviridin cluster|&lt;= 3.0|&lt;= 3.0|
 |<span id="proteusin">proteusin</span>|Proteusin cluster|&lt;= 3.0|&lt;= 3.0 |
 |<span id="blactam">blactam</span>|&beta;-lactam cluster|&lt;= 3.0|&lt;= 3.0|
@@ -54,22 +54,39 @@ types can be found below:
 |<span id="hserlactone">hserlactone</span>|Homoserine lactone cluster|&lt;= 3.0|&lt;= 3.0|
 |<span id="phenazine">phenazine</span>|Phenazine cluster|&lt;= 3.0|&lt;= 3.0|
 |<span id="phosphonate">phosphonate</span>|Phosphonate cluster|&lt;= 3.0|&lt;= 3.0|
-|<span id="fused">fused</span>|Pheganomycin-style protein ligase-containing cluster|4.0|4.0|
 |<span id="pbde">PBDE</span>|Polybrominated diphenyl ether cluster|4.1|4.1|
 |<span id="acyl_amino_acids">acyl_amino_acids</span>|N-acyl amino acid cluster|4.0|4.1|
 |<span id="tropodithietic-acid">tropodithietic-acid</span>|Tropodithietic acid cluster|5.0|5.0|
 |<span id="naggn">NAGGN</span>|N-acetylglutaminylglutamine amide|5.0|5.0|
 |<span id="ras-ripp">RaS-RiPP</span>|Streptide-like thioether-bond RiPPs|5.0|5.0|
 |<span id="fungal-ripp">fungal-RiPP</span>|Fungal RiPP with POP or UstH peptidase types and a modification|5.0|5.0|
-|<span id="tfua-related">TfuA-related</span>|TfuA-related RiPPs|5.1|5.1|
+|<span id="thioamitides">thioamitides</span>|Thioamitide RiPPs as found in JOBF01000011|5.1|6.0|
 |<span id="other">other</span>|Cluster containing a secondary metabolite-related protein that does not fit into any other category|4.0|5.0|
 |<span id="saccharide">saccharide</span>|Saccharide cluster (loose strictness, likely from primary metabolism)|&lt;= 3.0|&lt;= 3.0|
 |<span id="fatty_acid">fatty_acid</span>|Fatty acid cluster (loose strictness, likely from primary metabolism)|&lt;= 3.0|4.2|
 |<span id="halogenated">halogenated</span>|Cluster containing a halogenase and thus potentially generating a halogenated product|5.0|5.0|
+|<span id="rre-containing">RRE-containing</span>|RRE-element containing cluster|6.0|6.0|
+|<span id="napaa">NAPAA</span>|non-alpha poly-amino acids like e-Polylysin|6.0|6.0|
+|<span id="lanthipeptide-class-i">lantipeptide class I</span>|Class I lanthipeptide clusters like nisin|4.2|6.0|
+|<span id="lanthipeptide-class-ii">lantipeptide class II</span>|Class II lanthipeptide clusters like mutacin II (U40620)|4.2|6.0|
+|<span id="lanthipeptide-class-iii">lantipeptide class III</span>|Class III lanthipeptide clusters like labyrinthopeptin (FN178622)|4.2|6.0|
+|<span id="lanthipeptide-class-iv">lantipeptide class IV</span>|Class IV lanthipeptide clusters like venezuelin (HQ328852)|4.2|6.0|
+|<span id="lanthipeptide-class-v">lantipeptide class V</span>|Glycosylated lanthipeptide/linaridin hybrids like MT210103|5.1|6.0|
+|<span id="lipolanthine">lantipeptide class V</span>|Lanthipeptide class containing N-terminal fatty acids such as MG673929|6.0|6.0|
+|<span id="ranthipeptide">ranthipeptide</span>|Cys-rich peptides (aka. SCIFF: six Cys in fourty-five) like in CP001581:3481278-3502939|6.0|6.0|
+|<span id="redox-cofactor">redox-cofactor</span>|Redox-cofactors such as PQQ (NC_021985:1458906-1494876)|6.0|6.0|
+|<span id="pyrrolidine">pyrrolidine</span>|Pyrrolidines like described in BGC0001510|6.0|6.0|
+
 
 ###Obsolete/Previous Types
 |Label|Description|Added|Removed|Notes|
 |-----|-----------|:---:|:-----:|-----|
+|<span id="bacteriocin">bacteriocin</span>|Bacteriocin or other unspecified ribosomally synthesised and post-translationally modified peptide product (RiPP) cluster|4.1|6.0|Renamed to *RiPP-like*|
+|<span id="fused">fused</span>|Pheganomycin-style protein ligase-containing cluster|4.0|6.0|Renamed to *guanidinotides*|
+|<span id="head_to_tail">head_to_tail</span>|Head-to-tail cyclised (subtilosin-like) cluster|&lt;= 3.0|6.0|Merged into *sactipeptides*|
+|<span id="lanthidin">lanthidin</span>|Glycosylated lanthipeptide/linaridin hybrids like MT210103|5.1|6.0|Renamed to *lanthipeptide class V*|
+|<span id="lantipeptide"><span id="lanthipeptide">lanthipeptide</span></span>|Lanthipeptides|4.2|6.0|Split into subclasses, e.g. *lanthipeptide class I*|
+|<span id="tfua-related">TfuA-related</span>|TfuA-related RiPPs|5.1|6.0|Renamed to *thioamitides*|
 |<span id="otherks">otherks</span>|Other types of PKS cluster|&lt;= 3.0|5.0|Split into *PKS-like* and *hglE-KS*|
 |<span id="microcin">microcin</span>|Microcin cluster|&lt;= 3.0|5.0|Merged into *lasso peptide*|
 |<span id="cf_saccharide">cf_saccharide</span>|Possible saccharide cluster|&lt;= 3.0|5.0|Renamed to *saccharide*|
