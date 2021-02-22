@@ -5,6 +5,7 @@ nav:
       - Introduction: intro.md
       - Submitting jobs on the website: website_submission.md
       - Understanding the output: understanding_output.md
+      - Loading external results: sideloading.md
     - Module-specific information:
        - BGC detection: clusterrules.md
        - NRPS/PKS domains: modules/nrps_pks_domains.md
