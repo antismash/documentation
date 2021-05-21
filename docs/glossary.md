@@ -17,7 +17,9 @@ types can be found below:
 |<span id="butyrolactone">butyrolactone</span>|Butyrolactone cluster|&lt;= 3.0|&lt;= 3.0|
 |<span id="cdps">CDPS</span>|tRNA-dependent cyclodipeptide synthases|5.0|5.0|
 |<span id="cyanobactin">cyanobactin</span>|Cyanobactins like patellamide (AY986476)|&lt;= 3.0|6.0|
+|<span id="cyclic-lactone-autoinducer">cyclic-lactone-autoinducer</span>|agrD-like cyclic lactone autoinducer peptides (AF001782)|6.0|6.0|
 |<span id="ectoine">ectoine</span>|Ectoine cluster|&lt;= 3.0|&lt;= 3.0|
+|<span id="epipeptide">epipeptide</span>|D-amino-acid containing RiPPs such as yydF (D78193)|6.0|6.0|
 |<span id="fatty_acid">fatty_acid</span>|Fatty acid cluster (loose strictness, likely from primary metabolism)|&lt;= 3.0|4.2|
 |<span id="furan">furan</span>|Furan cluster|&lt;= 3.0|5.0|
 |<span id="fungal-ripp">fungal-RiPP</span>|Fungal RiPP with POP or UstH peptidase types and a modification|5.0|5.0|
@@ -64,6 +66,7 @@ types can be found below:
 |<span id="saccharide">saccharide</span>|Saccharide cluster (loose strictness, likely from primary metabolism)|&lt;= 3.0|&lt;= 3.0|
 |<span id="sactipeptide">sactipeptide</span>|Sactipeptide cluster|&lt;= 3.0|6.0|
 |<span id="siderophore">siderophore</span>|Siderophore cluster|&lt;= 3.0|&lt;= 3.0|
+|<span id="spliceotide">spliceotide</span>|RiPPs containing plpX type spliceases (NZ_KB235920:17899-42115)|6.0|6.0|
 |<span id="t1pks">T1PKS</span>|Type I PKS (Polyketide synthase)|&lt;= 3.0|&lt;= 3.0|
 |<span id="t2pks">T2PKS</span>|Type II PKS|&lt;= 3.0|5.0|
 |<span id="t3pks">T3PKS</span>|Type III PKS|&lt;= 3.0|&lt;= 3.0|
