@@ -35,6 +35,8 @@ List of contributors
 
 If you have found antiSMASH useful, please cite:
 
+* Blin, K., Shaw, S., Kloosterman, A.M., Charlop-Powers, Z., van Weezel, G.P., Medema, M.H., Weber, T. (2021) **antiSMASH 6.0: improving cluster detection and comparison capabilities**
+Nucleic Acids Research (2021) [doi: 10.1093/nar/gkab335](https://doi.org/10.1093/nar/gkab335).
 * Blin, K., Shaw, S., Steinke, K., Villebro, R., Ziemert, N., Lee, S.Y., Medema, M.H., and Weber, T. (2019) **antiSMASH 5.0: updates to the secondary metabolite genome mining pipeline** Nucleic Acids Research 47, W81-W87. [doi: 10.1093/nar/gkz310](https://doi.org/10.1093/nar/gkz310).
 * Blin, K., Wolf, T., Chevrette, M.G., Lu, X., Schwalen, C.J., Kautasar, S.A., Suarez Duran, H.G., de los Santos, E.L.C., Kim, H.U., Nave, M., et al. (2017). **antiSMASH 4.0—improvements in chemistry prediction and gene cluster boundary identification.** Nucleic Acids Res 45, W36-W41. [doi: 10.1093/nar/gkx319.](http://dx.doi.org/10.1093/nar/gkx319)
 * Weber, T., Blin, K., Duddela, S., Krug, D., Kim, H.U., Bruccoleri, R., Lee, S.Y., Fischbach, M.A., Müller, R., Wohlleben, W., et al. (2015). **antiSMASH 3.0-a comprehensive resource for the genome mining of biosynthetic gene clusters.** Nucleic Acids Res 43, W237-W243. [doi: 10.1093/nar/gkv437.](http://dx.doi.org/10.1093/nar/gkv437)
