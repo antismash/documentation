@@ -179,16 +179,16 @@ After the dependencies are installed, [create a Python virtual environment](#cre
 
 Install the following dependencies:
 
-- [diamond](https://github.com/bbuchfink/diamond) (versions 0.8.36, 0.9.17, and 0.9.24 tested, we recommended the 0.9 series)
-- [fasttree](http://www.microbesonline.org/fasttree/#Install) (version 2.1.9 tested)
+- [diamond](https://github.com/bbuchfink/diamond) (versions 0.8.36, 0.9.17, 0.9.24, and 2.0.9 tested)
+- [fasttree](http://www.microbesonline.org/fasttree/#Install) (versions 2.1.9 and 2.1.11 tested)
 - [GlimmerHMM](https://ccb.jhu.edu/software/glimmerhmm/) (version 3.0.4 tested)
 - [hmmer2](http://hmmer.janelia.org/download.html) (version 2.3.2 tested, append a 2 to all hmmer2 executables to avoid conflict with hmmer3 executable names, like hmmalign -> hmmalign2)
 - [hmmer3](http://hmmer.janelia.org/download.html) (3.1b2 tested)
 - [meme](http://meme-suite.org/meme-software/) (version 4.11.2 tested. **Version 4.11.4 changes output file formats, so don't use that.**)
-- [muscle](http://www.drive5.com/muscle/downloads.htm) (version 3.8.31 tested)
-- [NCBI blast+](ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/) (version 2.6.0 tested)
+- [muscle](http://www.drive5.com/muscle/downloads.htm) (versions 3.8.31 and 3.8.1551 tested)
+- [NCBI blast+](ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/) (versions 2.6.0 and 2.10.0 tested)
 - [prodigal](http://prodigal.ornl.gov/) (version 2.6.3 tested)
-- python (version 3.5.3 tested, any version >= 3.5.0 should work)
+- python (versions 3.7, 3.8, and 3.9 tested, any version >= 3.7.0 should work)
 - python-virtualenv (not needed, but highly recommended)
 
 After the dependencies are installed, [create a Python virtual environment](#create-a-python-virtual-environment).
@@ -200,14 +200,14 @@ Not strictly necessary, but highly recommended if you're not already using `cond
 
 * Create and activate a virtual environment (this can be skipped, but is highly recommended)
 ```bash
-virtualenv -p $(which python3) ~/as5env
-source ~/as5env/bin/activate
+virtualenv -p $(which python3) ~/asenv
+source ~/asenv/bin/activate
 ```
 
 Later, if you want to run antiSMASH, simply call
 
 ```bash
-source ~/as5env/bin/activate
+source ~/asenv/bin/activate
 antismash my_input.gbk
 ```
 
@@ -215,15 +215,17 @@ Now, continue with [installing the latest antiSMASH release](#installing-the-lat
 
 ### Installing the latest antiSMASH release
 
-* Download and extract the antiSMASH source (using version 5.1 as an example):
+**See [here](https://dl.secondarymetabolites.org/releases/) for all release versions**, adjust the instructions below as required.
+
+* Download and extract the antiSMASH source (using 6.0.0 as an example, see above for other versions):
 ```bash
-wget https://dl.secondarymetabolites.org/releases/5.1.1/antismash-5.1.1.tar.gz
-tar -zxf antismash-5.1.1.tar.gz
+wget https://dl.secondarymetabolites.org/releases/6.0.0/antismash-6.0.0.tar.gz
+tar -zxf antismash-6.0.0.tar.gz
 ```
 
-* Install antiSMASH (again, using 5.1 as an example, the name will match the download step):
+* Install antiSMASH (again, using 6.0 as an example, the name will match the download step):
 ```bash
-pip install ./antismash-5.1.1
+pip install ./antismash-6.0.0
 download-antismash-databases
 ```
 
