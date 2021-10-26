@@ -37,7 +37,7 @@ types can be found below:
 |<span id="lanthipeptide-class-iv">lantipeptide class IV</span>|Class IV lanthipeptide clusters like venezuelin (HQ328852)|4.2|6.0|
 |<span id="lanthipeptide-class-v">lantipeptide class V</span>|Glycosylated lanthipeptide/linaridin hybrids like MT210103|5.1|6.0|
 |<span id="lassopeptide">lassopeptide</span>|Lasso peptide cluster|&lt;= 3.0|5.0|
-|<span id="linaridin">linaridin</span>|Linaridin cluster|&lt;= 3.0|&lt;= 3.0|
+|<span id="linaridin">linaridin</span>|Linear arid peptide such as cypemycin (HQ148718) and salinipeptin (MG788286)|&lt;= 3.0|&lt;= 3.0|
 |<span id="lipolanthine">lipolanthine</span>|Lanthipeptide class containing N-terminal fatty acids such as MG673929|5.0|5.0|
 |<span id="melanin">melanin</span>|Melanin cluster|&lt;= 3.0|&lt;= 3.0|
 |<span id="microviridin">microviridin</span>|Microviridin cluster|&lt;= 3.0|&lt;= 3.0|
