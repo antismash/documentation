@@ -35,4 +35,4 @@ jobs:
         export DISPLAY=1
         echo "${{secrets.SSH_PASSPHRASE}}" | SSH_ASKPASS=./ap-cat.sh ssh-add ~/.ssh/id_ed25519
         rm ap-cat.sh
-        rsync --delete -avuP -e ssh site/ deploys@front01.secondarymetabolites.org:/var/www/as-docs/
+        rsync --delete -rlpcP -e ssh site/ deploys@front01.secondarymetabolites.org:/var/www/as-docs/
