@@ -19,6 +19,7 @@ nav:
         - 5.1: changelog/5.1.md
         - 5.2: changelog/5.2.md
         - 6.0: changelog/6.0.md
+        - 6.1: changelog/6.1.md
     - FAQ: faq.md
     - Glossary: glossary.md
     - About: about.md
