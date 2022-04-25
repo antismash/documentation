@@ -88,7 +88,6 @@ Note: This function is only available in the download/locally run version
 
 | Analysis |
 | -------- |
-
 | Protein family detection (PFAM) search on whole genome |
 | Genome comparisons |
 | ClusterBlast (identification of similar clusters in sequence genomes); link to antiSMASH database |
