@@ -54,6 +54,7 @@ and non-ribosomal peptide synthase (NRPS) related functions.
 |Polyketide_cyc2 | | Polyketide cyclase/dehydratase| [Pfam](https://pfam.xfam.org/family/PF10604.2)
 |Polyketide_cyc | | Polyketide cyclase| [Pfam](https://pfam.xfam.org/family/PF03364.13)
 |PS | PS | Pyran synthase domain|[Blin et al. 2017](#Blin2017)
+|PT | PT | Product template domain|[TIGRFams](https://www.ebi.ac.uk/interpro/entry/tigrfams/TIGR04532/)
 |SAT | SAT | Starter unit:ACP transacylase in aflatoxin biosynthesis| [Pfam](https://pfam.xfam.org/family/PF16073.4)
 |TD | TD | Terminal reductase domain| [Medema et al. 2011](#Medema2011)
 |Thioesterase | TE | Thioesterase domain| [Pfam](https://pfam.xfam.org/family/PF00975.13)
