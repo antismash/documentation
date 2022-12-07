@@ -16,7 +16,7 @@ and non-ribosomal peptide synthase (NRPS) related functions.
 |AMP-binding | A | Adenylation domain| [Pfam](https://www.ebi.ac.uk/interpro/entry/pfam/PF00502)
 |A-OX | A | Adenylation domain with integrated oxidase| [Medema et al. 2011](#Medema2011)
 |B | B | Branching domain|[Blin et al. 2017](#Blin2017)
-|Beta_elim_lyase| | Beta-eliminating lyase |[Pfam](https://www.ebi.ac.uk/interpro/entry/pfam/PF01212)
+|Beta_elim_lyase | SH | Beta-eliminating lyase |[Pfam](https://www.ebi.ac.uk/interpro/entry/pfam/PF01212)
 |CAL_domain | CAL | Co-enzyme A ligase domain| [Medema et al. 2011](#Medema2011)
 |cAT| cAT | Choline/Carnitine o-acyltransferase |[Pfam](https://www.ebi.ac.uk/interpro/entry/pfam/PF00755)
 |Cglyc | C | Glycopeptide condensation domain| [Medema et al. 2011](#Medema2011)
