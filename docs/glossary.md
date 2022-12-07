@@ -50,6 +50,7 @@ types can be found below:
 |<span id="nrps">nrps</span>|Non-ribosomal peptide synthetase cluster|&lt;= 3.0|6.0|
 |<span id="nrps-like"><span id="nrpsfragment">nrps-like</span></span>|NRPS-like fragment|5.0|5.0|
 |<span id="nrp-metallophore">NRP-metallophore</span>|Non-ribosomal peptide metallophores|7.0|7.0|
+|<span id="nrp-independent-siderophore">NRPS-independent-siderophore</span>|IucA/IucC-like siderophores (*siderophores* prior to 7.0)|7.0|7.0|
 |<span id="nucleoside">nucleoside</span>|Nucleoside cluster|&lt;= 3.0|5.0|
 |<span id="oligosaccharide">oligosaccharide</span>|Oligosaccharide cluster|&lt;= 3.0|&lt;= 3.0|
 |<span id="other">other</span>|Cluster containing a secondary metabolite-related protein that does not fit into any other category|4.0|5.0|
@@ -71,7 +72,6 @@ types can be found below:
 |<span id="rre-containing">RRE-containing</span>|RRE-element containing cluster|6.0|6.0|
 |<span id="saccharide">saccharide</span>|Saccharide cluster (loose strictness, likely from primary metabolism)|&lt;= 3.0|&lt;= 3.0|
 |<span id="sactipeptide">sactipeptide</span>|Sactipeptide cluster|&lt;= 3.0|6.0|
-|<span id="siderophore">siderophore</span>|Siderophore cluster|&lt;= 3.0|&lt;= 3.0|
 |<span id="spliceotide">spliceotide</span>|RiPPs containing plpX type spliceases (NZ_KB235920:17899-42115)|6.0|6.0|
 |<span id="t1pks">T1PKS</span>|Type I PKS (Polyketide synthase)|&lt;= 3.0|&lt;= 3.0|
 |<span id="t2pks">T2PKS</span>|Type II PKS|&lt;= 3.0|5.0|
@@ -90,6 +90,7 @@ types can be found below:
 
 |Label|Description|Added|Removed|Notes|
 |-----|-----------|:---:|:-----:|-----|
+|<span id="siderophore">siderophore</span>|Siderophore cluster|&lt;= 3.0|7.0|Renamed to *NRPS-independent-siderophore*|
 |<span id="bacteriocin">bacteriocin</span>|Bacteriocin or other unspecified ribosomally synthesised and post-translationally modified peptide product (RiPP) cluster|4.1|6.0|Renamed to *RiPP-like*|
 |<span id="fused">fused</span>|Pheganomycin-style protein ligase-containing cluster|4.0|6.0|Renamed to *guanidinotides*|
 |<span id="head_to_tail">head_to_tail</span>|Head-to-tail cyclised (subtilosin-like) cluster|&lt;= 3.0|6.0|Merged into *sactipeptides*|
