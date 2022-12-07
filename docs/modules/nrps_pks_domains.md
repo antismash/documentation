@@ -67,6 +67,58 @@ and non-ribosomal peptide synthase (NRPS) related functions.
 |Trans-AT_docking | | Trans-acyltransferase docking domain| [Medema et al. 2011](#Medema2011)
 |X | X | Glycopeptide-specific NRPS domain responsible for oxygenase recruitment| [Medema et al. 2011](#Medema2011)
 
+## Trans-AT domain subtypes
+Ketosynthase domains (KS) of trans-acyltransferase polyketide synthases (Trans-AT-PKS)
+have additional to their substrate specificities, i.e., the monomer incorporated into the module before the KS.
+
+Canonical double bonds are located between the alpha and beta position.
+
+Two modes of shifted double bond formation have been described, including a dedicated module for double bond shift and the presence of a characteristic DH-like domain.
+KS domains with substrate specificities for shifted double bonds usually group with KS domains that show substrate specificity for completely reduced moieties.
+
+Domains predicted to be non-elongating will have a prefix of `non-elongating-` within antiSMASH.
+Ambiguous results between categories will be separated by a `/`, e.g. `beta-OH/keto`.
+
+All the following categories are predicted by profiles from TransATor ([Helfrich et. al. 2019](#Helfrich2019)).
+
+
+| Name | Specificity |
+| ---- | ----------- |
+|AA | Glycine introduced by the NRPS module upstream.|
+|AcST | Acetyl groups as the starting building block of the polyketide. |
+|alpha-D-Me-shDB | Alpha-methyl groups with beta-gamma-double bonds.|
+|alphabeta-OH | Alpha-hydroxyl groups in conjunction with beta-hydroxyl groups.|
+|alphaMe | Alpha-methyl groups with either a reduced bond or a beta-gamma-double bond.|
+|alphaMe-beta-D-OH | Alpha-L-methyl groups in conjunction with beta-D-hydroxyl groups.|
+|alphaMe-beta-L-OH | Alpha-methyl groups in conjunction with beta-L-hydroxyl groups.|
+|alphaMe-betaOH | Alpha-methyl groups in conjunction with beta-hydroxyl groups.|
+|alphaMe-DB | Alpha-methyl groups with double bonds.|
+|alphaMe-eDB | Alpha-methyl groups with E-configured double bonds.|
+|alphaMe-zDB | Alpha-methyl groups with Z-configured double bonds|
+|arST | Aromatic rings as the starting building block of the polyketide. |
+|beta-D-OH | Beta-D-hydroxyl groups.|
+|beta-D-OMe | Beta-methoxy groups.|
+|beta-Me | Either beta-exomethylene groups or reduced beta-methyl groups, depending on the module composition upstream.|
+|beta-MeDB | Beta-methyl groups with E-configured double bonds.|
+|beta-L-OH | Beta-L-hydroxyl groups.|
+|beta-OH | Beta-hydroxyl groups.|
+|br | This type is specific for vinylogous chain branching.|
+|DB | Double bonds of various configurations.|
+|eDB | E-configured double bonds.|
+|keto | Beta-keto groups.|
+|lacST | Lactate as the starting building block of the polyketide. |
+|MeOST | Methoxycarbonyl units as the starting building block of the polyketide. |
+|Miscellaneous | This type is elongating, but the substrate specificity can not be predicted.|
+|non-elongating | When without a suffix, this type is non-elongating, but the substrate specificity can not be predicted.|
+|OUT | This type is in an out group.|
+|Oxa | Amino acids containing oxazole or thiazole rings introduced by the NRPS module upstream.|
+|OxI | Substrates with inserted oxygen, oftentimes resulting in oxidative cleaving. |
+|pyr | Pyran or furan rings, depending on the presence of an in-trans-acting hydroxylases two modules upstream. |
+|red | Reduced bonds. |
+|shDB | Beta-gamma-double bonds. |
+|ST | Amidated amino acid starters. Amide groups are introduced by a dedicated aminotransferase. |
+|unST | Phosphoglycerate-derived molecules as the starting building block of the polyketide. |
+|zDB | Z-configured double bonds.|
 
 <span id="Rausch2007">
 1. Rausch, C., Hoof, I., Weber, T., Wohlleben, W. and Huson, D.H. (2007)
@@ -102,4 +154,10 @@ antiSMASH 4.0-improvements in chemistry prediction and gene cluster boundary ide
 6. Ansari, M.Z., Sharma, J., Gokhale, R.S. and Mohanty, D. (2008)
 In silico analysis of methyltransferase domains involved in biosynthesis of secondary metabolites.
 </emph>BMC Bioinformatics</emph>, vol. <strong>9</strong>, 454
+</span>
+
+<span id="Helfrich2019">
+7.   Helfrich, E.J.N., Ueoka, R., Dolev, A., Rust, M., Meoded, R.A., Bhushan, A., Califano, G., Costa, R., Gugger, M., Steinbeck, C., Moreno, P., Piel, J. (2019)
+Automated structure prediction of trans-acyltransferase polyketide synthase products.
+<emph>Nat. Chem. Biol.</emph>, vol. <strong>15</strong>, 813–821.
 </span>
