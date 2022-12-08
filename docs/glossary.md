@@ -10,6 +10,7 @@ types can be found below:
 |<span id="2dos">2dos</span>|2-deoxy-streptamine aminoglycoside|7.0|7.0|
 |<span id="acyl_amino_acids">acyl_amino_acids</span>|N-acyl amino acid cluster|4.0|4.1|
 |<span id="aminocoumarin">aminocoumarin</span>|Aminocoumarin cluster|&lt;= 3.0|&lt;= 3.0|
+|<span id="aminopolycarboxylic-acid">aminopolycarboxylic-acid</span>|Aminopolycarboxylic acid metallophores (doi:10.1039/C8MT00009C)|7.0|7.0|
 |<span id="amglyccycl">amglyccycl</span>|Aminoglycoside/aminocyclitol cluster|&lt;= 3.0|&lt;= 3.0|
 |<span id="arylpolyene">arylpolyene</span>|Aryl polyene cluster|&lt;= 3.0|&lt;= 3.0|
 |<span id="betalactone">betalactone</span>|beta-lactone containing protease inhibitor|5.0|5.0|
@@ -43,6 +44,7 @@ types can be found below:
 |<span id="linaridin">linaridin</span>|Linear arid peptide such as cypemycin (HQ148718) and salinipeptin (MG788286)|&lt;= 3.0|&lt;= 3.0|
 |<span id="lipolanthine">lipolanthine</span>|Lanthipeptide class containing N-terminal fatty acids such as MG673929|5.0|5.0|
 |<span id="melanin">melanin</span>|Melanin cluster|&lt;= 3.0|&lt;= 3.0|
+|<span id="methanobactin">methanobactin</span>|Copper-chelating/transporting peptides (doi:10.1126/science.aap9437)|7.0|7.0|
 |<span id="microviridin">microviridin</span>|Microviridin cluster|&lt;= 3.0|&lt;= 3.0|
 |<span id="mycosporine-like">mycosporine-like</span>|Molecules containing mycosporine-like amino acid|7.0|7.0|
 |<span id="naggn">NAGGN</span>|N-acetylglutaminylglutamine amide|5.0|5.0|
@@ -53,6 +55,7 @@ types can be found below:
 |<span id="nrp-independent-siderophore">NRPS-independent-siderophore</span>|IucA/IucC-like siderophores (*siderophores* prior to 7.0)|7.0|7.0|
 |<span id="nucleoside">nucleoside</span>|Nucleoside cluster|&lt;= 3.0|5.0|
 |<span id="oligosaccharide">oligosaccharide</span>|Oligosaccharide cluster|&lt;= 3.0|&lt;= 3.0|
+|<span id="opine-like-metallophore">opine-like-metallophore</span>|Opine-like zincophores like staphylopine (doi:10.1128/mSystems.00554-20)|4.0|5.0|
 |<span id="other">other</span>|Cluster containing a secondary metabolite-related protein that does not fit into any other category|4.0|5.0|
 |<span id="pbde">PBDE</span>|Polybrominated diphenyl ether cluster|4.1|4.1|
 |<span id="phenazine">phenazine</span>|Phenazine cluster|&lt;= 3.0|&lt;= 3.0|
@@ -68,7 +71,7 @@ types can be found below:
 |<span id="ras-ripp">RaS-RiPP</span>|Streptide-like thioether-bond RiPPs|5.0|5.0|
 |<span id="redox-cofactor">redox-cofactor</span>|Redox-cofactors such as PQQ (NC_021985:1458906-1494876)|6.0|6.0|
 |<span id="resorcinol">resorcinol</span>|Resorcinol cluster|&lt;= 3.0|&lt;= 3.0|
-|<span id="ripp-like">RiPP-like</span>|Other unspecified ribosomally synthesised and post-translationally modified peptide product (RiPP) cluster|4.1|6.0|
+|<span id="ripp-like">RiPP-like</span>|Other unspecified ribosomally synthesised and post-translationally modified peptide product (RiPP) cluster|4.1|7.0|
 |<span id="rre-containing">RRE-containing</span>|RRE-element containing cluster|6.0|6.0|
 |<span id="saccharide">saccharide</span>|Saccharide cluster (loose strictness, likely from primary metabolism)|&lt;= 3.0|&lt;= 3.0|
 |<span id="sactipeptide">sactipeptide</span>|Sactipeptide cluster|&lt;= 3.0|6.0|
