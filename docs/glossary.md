@@ -55,7 +55,7 @@ types can be found below:
 |<span id="nrp-independent-siderophore">NRPS-independent-siderophore</span>|IucA/IucC-like siderophores (*siderophores* prior to 7.0)|7.0|7.0|
 |<span id="nucleoside">nucleoside</span>|Nucleoside cluster|&lt;= 3.0|5.0|
 |<span id="oligosaccharide">oligosaccharide</span>|Oligosaccharide cluster|&lt;= 3.0|&lt;= 3.0|
-|<span id="opine-like-metallophore">opine-like-metallophore</span>|Opine-like zincophores like staphylopine (doi:10.1128/mSystems.00554-20)|4.0|5.0|
+|<span id="opine-like-metallophore">opine-like-metallophore</span>|Opine-like zincophores like staphylopine (doi:10.1128/mSystems.00554-20)|7.0|7.0|
 |<span id="other">other</span>|Cluster containing a secondary metabolite-related protein that does not fit into any other category|4.0|5.0|
 |<span id="pbde">PBDE</span>|Polybrominated diphenyl ether cluster|4.1|4.1|
 |<span id="phenazine">phenazine</span>|Phenazine cluster|&lt;= 3.0|&lt;= 3.0|
