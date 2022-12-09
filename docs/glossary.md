@@ -64,6 +64,7 @@ types can be found below:
 |<span id="phosphonate-like">phosphonate-like</span>|Phosphonate-like cluster (prior to 7.0 this was the phosphonate rule)|7.0|7.0|
 |<span id="pks-like">PKS-like</span>|Other types of PKS cluster|5.0|5.0|
 |<span id="ppys-ks"><span id="ppysks">PpyS-KS</span></span>|PPY-like pyrone cluster|4.2|4.2|
+|<span id="prodigiosin">prodigiosin</span>|Serratia-type non-traditional PKS prodigiosin biosynthesis pathway|6.0|6.0|
 |<span id="proteusin">proteusin</span>|Proteusin cluster|&lt;= 3.0|&lt;= 3.0 |
 |<span id="pufa">PUFA</span>|Polyunsaturated fatty acid cluster|&lt;= 3.0|&lt;= 3.0|
 |<span id="pyrrolidine">pyrrolidine</span>|Pyrrolidines like described in BGC0001510|6.0|6.0|
