@@ -26,6 +26,17 @@ It is not hidden by the module graphic due to being important for a whole produc
 Moving the mouse cursor over a *complete* module will hide the module graphic and display the component domains.
 These domains can be clicked on to access specific information (this behaviour has not changed with the addition of modules).
 
+#### Cross-gene modules
+
+Some modules can be split across two genes.
+These modules, when detected, are shown with jagged edges on the joining side.
+To help with identifying the other part of the module in the other gene, each part of the module is also labelled with a character.
+
+Here is an example of these modules, using a small section of the kirromycin gene cluster:
+
+![cross-cds-module](../img/modules_cross_cds.png)
+
+
 #### Modifications
 
 The second module in the above examples has a modification domain (`nMT` or N-methyltransferase).
