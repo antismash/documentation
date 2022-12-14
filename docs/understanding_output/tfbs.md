@@ -11,6 +11,6 @@ On the region overview, predicted TFBS hits are shown with small black pins.
 In the "TFBS Finder" tab in the details panel, the different TFBS hit are shown
 with their binding site sequence and the surrounding genes for context.
 
-![TFBS glossary](/img/tfbs_sidepanel.png)
+![TFBS glossary](/img/tfbs_sidebar.png)
 
 The "TFBS Finder" sidepanel contains an overview of all the TFBS hits found in the region.
