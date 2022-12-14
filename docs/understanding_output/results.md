@@ -22,13 +22,19 @@ Clicking the gene will provide more information on
 the gene: its annotation, its smCOG (secondary metabolism gene family), its
 location, and cross-links specific to that gene.
 
+## Detailed annotation
+
+In the middle panel, "Detailed annotation", you can find more in-depth
+information on the selected gene cluster.
+
+Individual prediction tools will add tabs here to provide their results.
+
 ### Detailed annotation for PKS/NRPS domains
 
 ![Region display](img/DetailedDomainAnnotation.png)
 
 
-In the middle panel, "Detailed annotation", you can find more in-depth
-information on the selected gene cluster.  For predicted modular polyketide
+For predicted modular polyketide
 synthase (PKS) and/or nonribosomal peptide synthetase (NRPS) proteins, you will
 find the domain annotations.
 
@@ -48,6 +54,10 @@ browse through the gene clusters. Genes with the same colour are putative
 homologs based on significant Blast hits between them.
 Similar information is provided in the "KnownCluserBlast folder", which detects BGCs included in the curated MIBiG dataset.
 "SubClusterBlast" provides information about conserved operons, which, for example are involved in precursor biosynthesis of non-proteinogenic amino acids.
+
+### Transcription Factor Binding Sites prediction
+
+The [Transcription Factor Binding Sites](tfbs.md) tab is explained on [its own page](tfbs.md).
 
 ### Prediction of putative core sturctures
 
