@@ -66,3 +66,24 @@ In the case of a `PKS_KS` domain being iterative, the module will show an additi
 ![iterative](../img/modules_iterative.png)
 
 The number of iterations is not determined, and only a single monomer (in this case `mal`) will be added to the candidate cluster's final polymer.
+
+
+## Bubble/module-only drawing
+
+An alternative visualisation of modules was added after the release of antiSMASH 6.0.
+This visualisation will be familiar to those who are reading academic papers of related cluster types.
+This is accessed by selecting the `NRPS/PKS modules` details tab in the HTML results.
+For example, a small section of the kirromycin cluster:
+
+![bubbles](../img/modules_bubbles.png)
+
+In this visualistion, the gene ordering is as predicted for that particular candidate cluster
+(which can be changed in a drop-down menu above the drawing itself).
+
+Gene arrows, which can be clicked to highlight that gene in the cluster viewer, indicate the extent of genes.
+
+Modules are number, e.g. `M 5`, and shown with lines that indicate the extent of the module.
+In the example above, module 7 is a cross-gene module, with the module line crossing the boundaries of `kirAIII` and the gene to the right.
+Below the module number is the predicted monomer of the module.
+
+A legend is included in the visualisation to explain the various notations, one example of which is the inactive KR domain in module 8.
