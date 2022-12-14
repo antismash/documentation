@@ -4,7 +4,10 @@ nav:
     - Using antiSMASH:
       - Introduction: intro.md
       - Submitting jobs on the website: website_submission.md
-      - Understanding the output: understanding_output.md
+      - Understanding the output:
+        - Region concept: understanding_output/regions.md
+        - Overview page: understanding_output/overview.md
+        - Results page: understanding_output/results.md
       - Loading external results: sideloading.md
     - Module-specific information:
        - BGC detection: clusterrules.md
