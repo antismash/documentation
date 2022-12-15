@@ -57,7 +57,7 @@ Similar information is provided in the "KnownCluserBlast folder", which detects 
 
 ### Transcription Factor Binding Sites prediction
 
-The [Transcription Factor Binding Sites](tfbs.md) tab is explained on [its own page](tfbs.md).
+The [Transcription Factor Binding Sites](/modules/tfbs.md) tab is explained on [its own page](/modules/tfbs.md).
 
 ### Prediction of putative core sturctures
 
