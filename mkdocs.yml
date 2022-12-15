@@ -11,6 +11,7 @@ nav:
       - Loading external results: sideloading.md
     - Module-specific information:
        - BGC detection: clusterrules.md
+       - CompaRiPPson: modules/comparippson.md
        - NRPS/PKS domains: modules/nrps_pks_domains.md
        - NRPS/PKS modules: modules/nrps_pks_modules.md
        - PKS type II: modules/t2pks.md
