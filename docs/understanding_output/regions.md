@@ -3,7 +3,7 @@
 Currently, there is no good method available to accurately predict gene cluster borders based purely on the submitted sequence data (with the exception of the CASSIS algorithm, which is able to detect co-regulated genes in fungal genomes).
 In antiSMASH5, the display of gene clusters change to reflect the fact that the BGC borders are just offsets defined in the cluster detection rules, we renamed the highest level that is displayed to “Region”.
 
-A *region* in antiSMASH 5 corresponds to the *gene cluster* annotation in antiSMASH 4 and earlier.
+A *region* in antiSMASH 5 and above corresponds to the *gene cluster* annotation in antiSMASH 4 and earlier.
 
 ###How are antiSMASH 5 regions defined?
 
