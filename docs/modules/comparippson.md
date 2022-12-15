@@ -23,6 +23,6 @@ The query is shown as the top line, and the reference is the bottom line, with t
 Numeric values to the left are the start position (within the translation) of the match, and the end position to the right.
 
 
-An example of results from the antiSMASH-DB is shown below, including a shared reference seequence:
+An example of results from the antiSMASH-DB is shown below, including a shared reference sequence:
 ![aS-DB example](/img/comparippson_asdb.png)
 
