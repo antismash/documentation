@@ -1,4 +1,4 @@
-# Understandinging antiSMASH Output
+# Understanding antiSMASH Output
 
 Currently, there is no good method available to accurately predict gene cluster
 borders based purely on the submitted sequence data. Accordingly, antiSMASH predicts
