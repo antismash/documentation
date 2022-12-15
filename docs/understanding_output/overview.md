@@ -2,7 +2,7 @@
 
 The overview page contains a summary of all regions found in all records/contigs within the input given to antiSMASH.
 
-![Region overview](img/cluster_overview.png)
+![Region overview](/img/cluster_overview.png)
 
 At the top left of the page is the antiSMASH version information (**1**).
 Direct comparisons between antiSMASH results should use the same version for consistency, as results can change between versions.

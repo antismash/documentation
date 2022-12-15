@@ -1,6 +1,6 @@
 # Region Results page
 
-![Region display](img/region_display.jpg)
+![Region display](/img/region_display.jpg)
 
 In the upper panel, "Gene cluster description", information is given about each
 gene cluster that was detected. In the upper line, the biosynthetic type and
@@ -31,7 +31,7 @@ Individual prediction tools will add tabs here to provide their results.
 
 ### Detailed annotation for PKS/NRPS domains
 
-![Region display](img/DetailedDomainAnnotation.png)
+![Region display](/img/DetailedDomainAnnotation.png)
 
 
 For predicted modular polyketide
@@ -43,7 +43,7 @@ information to be displayed, such as the name of the detected domain, its
 precise location, any substrate specificites predicted, and a link to run Blast
 on the domain.  For predicted Lantipeptide clusters, the predicted core peptide
 sequences of all identified prepeptides is displayed.
-A list of detected domains can be found [here](modules/nrps_pks_domains.md).
+A list of detected domains can be found [here](/modules/nrps_pks_domains.md).
 
 ### Identifying similar BGCs
 
@@ -61,7 +61,7 @@ The [Transcription Factor Binding Sites](tfbs.md) tab is explained on [its own p
 
 ### Prediction of putative core sturctures
 
-![Structure Prediction](img/StructurePrediction.png)
+![Structure Prediction](/img/StructurePrediction.png)
 
 In the upper side panel
 on the right. "Predicted core structure", a rough prediction of the overall
@@ -75,7 +75,7 @@ Ketoreductase domain-based stereochemistry predictions for PKSs (Starcevic et al
 For PKS type II clusters, the side panel shows a list of the predicted starter units along with bitscores, a list of the predicted number of malonyl elongations along with bitscores, the predicted product class, a list of product molecular weights predictions for each combination of starter unit and number of malonyl elongations.
 Furthermore, it displays each gene/protein that is involved in the polyketide biosynthesis of the cluster.
 For each gene/protein the type is indicated and for some a prediction of function is displayed.
-More details on the predictions can be found [here](modules/t2pks.md).
+More details on the predictions can be found [here](/modules/t2pks.md).
 
 A chemical structure is displayed for NRPS and Type I PKS metabolites, which is derived by combining the results of the domain analyses.
 
@@ -83,7 +83,7 @@ A chemical structure is displayed for NRPS and Type I PKS metabolites, which is 
 
 ### Downloading results
 
-![Main menu](img/download_results.jpg)
+![Main menu](/img/download_results.jpg)
 
 In the upper right, a small list of buttons offers further functionality. The
 question-mark button will get you to this help page. The exclamation-mark button

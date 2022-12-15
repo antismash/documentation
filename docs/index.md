@@ -7,7 +7,7 @@ version](https://antismash.secondarymetabolites.org/).
 Click here for a [PDF manual](PDFmanual/antiSMASH5manual.pdf) describing the basics of using antiSMASH and the antiSMASH database.
 
 See the *Using antiSMASH* section for information on how to [submit antiSMASH jobs](website_submission.md)
-and [interpret the HTML output](understanding_output.md).
+and [interpret the HTML output](understanding_output/index.md).
 
 The [Glossary](glossary.md) and [FAQ](faq.md) explain some of the abbreviation used in antiSMASH and answer frequently asked questions.
 

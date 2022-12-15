@@ -13,20 +13,20 @@ These make up a *core*, which is extended by its *neighbourhood*, which constiut
 
 Here is an example of a rule for detecting a protocluster for a type I PKS:
 
-![Example cluster rule](img/clusterrules.png)
+![Example cluster rule](/img/clusterrules.png)
 
 Whenever antiSMASH finds a gene coding for a protein that has as PKS\_AT domain and a PKS\_KS domain of various sub-types, a new “Type I PKS *protocluster*” feature is generated within the region; this feature comprises the *core* gene-product(s) that trigger the rule (i.e. the PKS encoding genes and extends the *neighborhood* to the left and right of the core genes by 20 kb to the left and right (as defined by the EXTENT parameter in the rule definition).
 The values for the different cluster types are empirically determined and generally tend to overpredict, i.e. included also adjacent genes.
 After the *protocluster* features are assigned (note: there can be multiple protocluster features within a single *region*), they are checked for overlaps (as defined by the CUTOFF parameter) and are grouped into several types of *candidate clusters* to reflect the observation that many BGCs actually comprise several classes of biosynthetic machinery. For example glycopeptides like vancomycin or balhimycin (shown) are synthesized via NRPS, but also contain a type III PKS as a precursor pathway.
 
 
-![Balhimycin biosynthetic gene cluster](img/bal-cluster.png)
+![Balhimycin biosynthetic gene cluster](/img/bal-cluster.png)
 
 Thus, the displayed region contains the `NRPS` *protocluster* (green bar) and a `T3PKS` *protocluster* yellow bar.
 As their neighbourhoods overlap, they are assigned to a *candidate cluster*.
 
 ###Candidate cluster types
-![Figure candidate clusters](img/regionLogic.png)
+![Figure candidate clusters](/img/regionLogic.png)
 
 
 ####Chemical hybrid
