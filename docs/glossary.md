@@ -13,7 +13,7 @@ types can be found below:
 |<span id="aminopolycarboxylic-acid">aminopolycarboxylic-acid</span>|Aminopolycarboxylic acid metallophores (doi:10.1039/C8MT00009C)|7.0|7.0|
 |<span id="amglyccycl">amglyccycl</span>|Aminoglycoside/aminocyclitol|&lt;= 3.0|&lt;= 3.0|
 |<span id="arylpolyene">arylpolyene</span>|Aryl polyene|&lt;= 3.0|&lt;= 3.0|
-|<span id="betalactone">betalactone</span>|beta-lactone containing protease inhibitor|5.0|5.0|
+|<span id="betalactone">betalactone</span>|Beta-lactone containing protease inhibitor|5.0|5.0|
 |<span id="blactam">blactam</span>|&beta;-lactam|&lt;= 3.0|&lt;= 3.0|
 |<span id="bottromycin">bottromycin</span>|Bottromycin|&lt;= 3.0|&lt;= 3.0|
 |<span id="butyrolactone">butyrolactone</span>|Butyrolactone|&lt;= 3.0|&lt;= 3.0|
@@ -29,8 +29,8 @@ types can be found below:
 |<span id="fungal-ripp-like">fungal-RiPP-like</span>|Fungal RiPP-likes|7.0|7.0|
 |<span id="glycocin">glycocin</span>|Glycocin|&lt;= 3.0|&lt;= 3.0|
 |<span id="guanidinotides">guanidinotides</span>|Pheganomycin-style protein ligase-containing cluster|4.0|6.0|
-|<span id="halogenated">halogenated</span>|Cluster containing a halogenase and thus potentially generating a halogenated product|5.0|5.0|
-|<span id="hgle-ks"><span id="hgleks">hglE-KS</span></span>|heterocyst glycolipid synthase-like PKS|5.0|5.0|
+|<span id="halogenated">halogenated</span>|Halogenase-containing cluster, potentially generating a halogenated product|5.0|5.0|
+|<span id="hgle-ks"><span id="hgleks">hglE-KS</span></span>|Heterocyst glycolipid synthase-like PKS|5.0|5.0|
 |<span id="hserlactone">hserlactone</span>|Homoserine lactone|&lt;= 3.0|&lt;= 3.0|
 |<span id="indole">indole</span>|Indole|&lt;= 3.0|4.0|
 |<span id="lap">LAP</span>|Linear azol(in)e-containing peptides|&lt;= 3.0|6.0|
@@ -48,11 +48,11 @@ types can be found below:
 |<span id="microviridin">microviridin</span>|Microviridin|&lt;= 3.0|&lt;= 3.0|
 |<span id="mycosporine-like">mycosporine-like</span>|Molecules containing mycosporine-like amino acid|7.0|7.0|
 |<span id="naggn">NAGGN</span>|N-acetylglutaminylglutamine amide|5.0|5.0|
-|<span id="napaa">NAPAA</span>|non-alpha poly-amino acids like e-Polylysin|6.0|7.0|
-|<span id="nrps">nrps</span>|Non-ribosomal peptide synthetase|&lt;= 3.0|6.0|
-|<span id="nrps-like"><span id="nrpsfragment">nrps-like</span></span>|NRPS-like fragment|5.0|5.0|
+|<span id="napaa">NAPAA</span>|Non-alpha poly-amino acids like e-Polylysin|6.0|7.0|
+|<span id="nrps">NRPS</span>|Non-ribosomal peptide synthetase|&lt;= 3.0|6.0|
+|<span id="nrps-like"><span id="nrpsfragment">NRPS-like</span></span>|NRPS-like fragment|5.0|5.0|
 |<span id="nrp-metallophore">NRP-metallophore</span>|Non-ribosomal peptide metallophores|7.0|7.0|
-|<span id="nrp-independent-siderophore">NRPS-independent-siderophore</span>|IucA/IucC-like siderophores (*siderophores* prior to 7.0)|7.0|7.0|
+|<span id="nrp-independent-siderophore">NRPS-independent-siderophore</span>|IucA/IucC-like siderophores (*siderophore* prior to 7.0)|7.0|7.0|
 |<span id="nucleoside">nucleoside</span>|Nucleoside|&lt;= 3.0|5.0|
 |<span id="oligosaccharide">oligosaccharide</span>|Oligosaccharide|&lt;= 3.0|&lt;= 3.0|
 |<span id="opine-like-metallophore">opine-like-metallophore</span>|Opine-like zincophores like staphylopine (doi:10.1128/mSystems.00554-20)|7.0|7.0|
