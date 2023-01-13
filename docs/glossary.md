@@ -1,4 +1,4 @@
-#Cluster Types
+#Protocluster Types
 
 antiSMASH uses some abbreviations internally to refer to the different
 types of secondary metabolite clusters, a short explanation of the different
