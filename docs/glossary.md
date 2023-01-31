@@ -70,6 +70,7 @@ types can be found below:
 |<span id="pyrrolidine">pyrrolidine</span>|Pyrrolidines like described in BGC0001510|6.0|6.0|
 |<span id="ranthipeptide">ranthipeptide</span>|Cys-rich peptides (aka. SCIFF: six Cys in fourty-five) like in CP001581:3481278-3502939|6.0|6.0|
 |<span id="ras-ripp">RaS-RiPP</span>|Streptide-like thioether-bond RiPPs|5.0|5.0|
+|<span id="rcdps">RCDPS</span>|Fungal Arginine-containing cyclic dipeptides|7.0|7.0|
 |<span id="redox-cofactor">redox-cofactor</span>|Redox-cofactors such as PQQ (NC_021985:1458906-1494876)|6.0|6.0|
 |<span id="resorcinol">resorcinol</span>|Resorcinol|&lt;= 3.0|&lt;= 3.0|
 |<span id="ripp-like">RiPP-like</span>|Other unspecified ribosomally synthesised and post-translationally modified peptide product (RiPP)|4.1|7.0|
