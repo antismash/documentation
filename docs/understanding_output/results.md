@@ -1,6 +1,6 @@
 # Region Results page
 
-![Region display](/img/region_display.jpg)
+![Region display](/img/region_display.png)
 
 In the upper panel, "Gene cluster description", information is given about each
 gene cluster that was detected. In the upper line, the biosynthetic type and
@@ -16,10 +16,11 @@ be displayed above the gene.
 
 ### Gene details
 
-![Gene details display](/img/gene_details.jpg)
+![Gene details display](/img/gene_details.png)
 
 Clicking the gene will provide more information on
-the gene: its annotation, its smCOG (secondary metabolism gene family), its
+the gene: identifiers, existing product annotation,
+gene functions (including smCOG, or secondary metabolism gene family, if enabled), its
 location, and cross-links specific to that gene.
 
 ## Detailed annotation
@@ -36,13 +37,16 @@ Individual prediction tools will add tabs here to provide their results.
 
 For predicted modular polyketide
 synthase (PKS) and/or nonribosomal peptide synthetase (NRPS) proteins, you will
-find the domain annotations.
+find the domain annotations and any modules that are detected.
 
-Clicking on a domain image will prompt more
-information to be displayed, such as the name of the detected domain, its
-precise location, any substrate specificites predicted, and a link to run Blast
-on the domain.  For predicted Lantipeptide clusters, the predicted core peptide
-sequences of all identified prepeptides is displayed.
+The module overlays can be hidden by enabling the "Show module domains" option.
+
+![Domain display hiding modules](/img/DetailedDomainAnnotation_hidden.png)
+
+Clicking on a domain will display more
+information, such as the name of the detected domain, its
+precise location, any substrate specificites or other predictions, and a link to run Blast
+on the domain.
 A list of detected domains can be found [here](/modules/nrps_pks_domains.md).
 
 ### Identifying similar BGCs
@@ -83,7 +87,7 @@ A chemical structure is displayed for NRPS and Type I PKS metabolites, which is 
 
 ### Downloading results
 
-![Main menu](/img/download_results.jpg)
+![Main menu](/img/download_results.png)
 
 In the upper right, a small list of buttons offers further functionality. The
 question-mark button will get you to this help page. The exclamation-mark button

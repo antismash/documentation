@@ -22,7 +22,7 @@ After the *protocluster* features are assigned (note: there can be multiple prot
 
 ![Balhimycin biosynthetic gene cluster](/img/bal-cluster.png)
 
-Thus, the displayed region contains the `NRPS` *protocluster* (green bar) and a `T3PKS` *protocluster* yellow bar.
+Thus, the displayed region contains the `NRPS` *protocluster* (green bar) and a `T3PKS` *protocluster* (yellow bar).
 As their neighbourhoods overlap, they are assigned to a *candidate cluster*.
 
 ###Candidate cluster types
