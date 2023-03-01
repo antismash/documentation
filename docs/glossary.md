@@ -49,10 +49,10 @@ types can be found below:
 |<span id="mycosporine-like">mycosporine-like</span>|Molecules containing mycosporine-like amino acid|7.0|7.0|
 |<span id="naggn">NAGGN</span>|N-acetylglutaminylglutamine amide|5.0|5.0|
 |<span id="napaa">NAPAA</span>|Non-alpha poly-amino acids like e-Polylysin|6.0|7.0|
+|<span id="ni-siderophore"><span id="nrp-independent-siderophore">NI-siderophore</span></span>|NRPS-independent, IucA/IucC-like siderophores (*siderophore* prior to 7.0)|7.0|7.0|
 |<span id="nrps">NRPS</span>|Non-ribosomal peptide synthetase|&lt;= 3.0|6.0|
 |<span id="nrps-like"><span id="nrpsfragment">NRPS-like</span></span>|NRPS-like fragment|5.0|5.0|
 |<span id="nrp-metallophore">NRP-metallophore</span>|Non-ribosomal peptide metallophores|7.0|7.0|
-|<span id="nrp-independent-siderophore">NRPS-independent-siderophore</span>|IucA/IucC-like siderophores (*siderophore* prior to 7.0)|7.0|7.0|
 |<span id="nucleoside">nucleoside</span>|Nucleoside|&lt;= 3.0|5.0|
 |<span id="oligosaccharide">oligosaccharide</span>|Oligosaccharide|&lt;= 3.0|&lt;= 3.0|
 |<span id="opine-like-metallophore">opine-like-metallophore</span>|Opine-like zincophores like staphylopine (doi:10.1128/mSystems.00554-20)|7.0|7.0|
@@ -95,7 +95,7 @@ types can be found below:
 
 |Label|Description|Added|Removed|Notes|
 |-----|-----------|:---:|:-----:|-----|
-|<span id="siderophore">siderophore</span>|Siderophore|&lt;= 3.0|7.0|Renamed to *NRPS-independent-siderophore*|
+|<span id="siderophore">siderophore</span>|Siderophore|&lt;= 3.0|7.0|Renamed to *NI-siderophore*|
 |<span id="bacteriocin">bacteriocin</span>|Bacteriocin or other unspecified ribosomally synthesised and post-translationally modified peptide product (RiPP)|4.1|6.0|Renamed to *RiPP-like*|
 |<span id="fused">fused</span>|Pheganomycin-style protein ligase-containing cluster|4.0|6.0|Renamed to *guanidinotides*|
 |<span id="head_to_tail">head_to_tail</span>|Head-to-tail cyclised RiPP (subtilosin-like)|&lt;= 3.0|6.0|Merged into *sactipeptides*|
