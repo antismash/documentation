@@ -4,8 +4,6 @@
 The easiest way to get started with antiSMASH is to use [the public web
 version](https://antismash.secondarymetabolites.org/).
 
-Click here for a [PDF manual](PDFmanual/antiSMASH5manual.pdf) describing the basics of using antiSMASH and the antiSMASH database.
-
 See the *Using antiSMASH* section for information on how to [submit antiSMASH jobs](website_submission.md)
 and [interpret the HTML output](understanding_output/index.md).
 
