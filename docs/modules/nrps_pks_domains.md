@@ -99,12 +99,12 @@ All the following categories are predicted by profiles from TransATor ([Helfrich
 |beta-D-OH | Beta-D-hydroxyl groups.|
 |beta-D-OMe | Beta-methoxy groups.|
 |beta-Me | Either beta-exomethylene groups or reduced beta-methyl groups, depending on the module composition upstream.|
-|beta-MeDB | Beta-methyl groups with E-configured double bonds.|
 |beta-L-OH | Beta-L-hydroxyl groups.|
 |beta-OH | Beta-hydroxyl groups.|
 |br | This type is specific for vinylogous chain branching.|
 |DB | Double bonds of various configurations.|
 |eDB | E-configured double bonds.|
+|exomethylene | Exomethylene groups. |
 |keto | Beta-keto groups.|
 |lacST | Lactate as the starting building block of the polyketide. |
 |MeOST | Methoxycarbonyl units as the starting building block of the polyketide. |
