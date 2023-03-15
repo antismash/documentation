@@ -229,9 +229,9 @@ pip install ./antismash-6.0.0
 download-antismash-databases
 ```
 
-We recommend running the prerequisite check to make sure everything is as expected with
+Prepare data files and performance caches with the following (NOTE: for versions before 7.0, change `--prepare-data` to `--check-prereqs`)
 ```bash
-antismash --check-prereqs
+antismash --prepare-data
 ```
 
 If you want to see the available command line options, use
