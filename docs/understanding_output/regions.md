@@ -1,11 +1,11 @@
-## The antiSMASH 5 region concept
+## The antiSMASH region concept
 
 Currently, there is no good method available to accurately predict gene cluster borders based purely on the submitted sequence data (with the exception of the CASSIS algorithm, which is able to detect co-regulated genes in fungal genomes).
 In antiSMASH5, the display of gene clusters change to reflect the fact that the BGC borders are just offsets defined in the cluster detection rules, we renamed the highest level that is displayed to “Region”.
 
 A *region* in antiSMASH 5 and above corresponds to the *gene cluster* annotation in antiSMASH 4 and earlier.
 
-###How are antiSMASH 5 regions defined?
+###How are antiSMASH regions defined?
 
 In the first step, all gene products of the analyzed sequence are searched against a database of highly conserved enzyme HMM profiles (core-enzymes), which are indicative of a specific BGC type.
 In a second step, pre-defined cluster rules are employed to define individual *protoclusters* encoded in the region.
@@ -50,7 +50,8 @@ but their core locations overlap, e.g. case **B** in the image above.
 These candidate clusters are the weakest form of hybrid candidates.
 They contain protoclusters which do not match either *chemical* or *interleaved* variants,
 but transitively overlap in their neighbourhoods.
-Every protocluster in a "neighbouring candidate cluster" will also belong to one of the other kinds of candidate clusters, including the *single* kind, described below.
+Every protocluster in a "neighbouring candidate cluster" will also belong to one of the other kinds of candidate clusters, including the *single* kind, described below,
+excepting cases where it would be a *single* candidate **and** have the exact coordinates of the neighbouring candidate cluster.
 
 ####Single
 This kind of candidate clusters exists where only one protocluster is contained, e.g. case **D**.
