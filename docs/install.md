@@ -179,17 +179,19 @@ After the dependencies are installed, [create a Python virtual environment](#cre
 
 Install the following dependencies:
 
-- [diamond](https://github.com/bbuchfink/diamond) (versions 0.8.36, 0.9.17, 0.9.24, and 2.0.9 tested)
+- [diamond](https://github.com/bbuchfink/diamond) (versions 0.8.36, 0.9.17, 0.9.24, 2.0.9, and 2.0.15 tested)
 - [fasttree](http://www.microbesonline.org/fasttree/#Install) (versions 2.1.9 and 2.1.11 tested)
 - [GlimmerHMM](https://ccb.jhu.edu/software/glimmerhmm/) (version 3.0.4 tested)
 - [hmmer2](http://hmmer.janelia.org/download.html) (version 2.3.2 tested, append a 2 to all hmmer2 executables to avoid conflict with hmmer3 executable names, like hmmalign -> hmmalign2)
 - [hmmer3](http://hmmer.janelia.org/download.html) (3.1b2 tested)
 - [meme](http://meme-suite.org/meme-software/) (version 4.11.2 tested. **Version 4.11.4 changes output file formats, so don't use that.**)
-- [muscle](http://www.drive5.com/muscle/downloads.htm) (versions 3.8.31 and 3.8.1551 tested)
 - [NCBI blast+](ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/) (versions 2.6.0 and 2.10.0 tested)
 - [prodigal](http://prodigal.ornl.gov/) (version 2.6.3 tested)
-- python (versions 3.7, 3.8, and 3.9 tested, any version >= 3.7.0 should work)
+- python (versions 3.9 and 3.11 tested, any version >= 3.9.0 should work)
 - python-virtualenv (not needed, but highly recommended)
+
+For versions of antiSMASH prior to 7.0, there are additional requirements:
+- [muscle](http://www.drive5.com/muscle/downloads.htm) (versions 3.8.31 and 3.8.1551 tested, version 5 and above are not compatible)
 
 After the dependencies are installed, [create a Python virtual environment](#create-a-python-virtual-environment).
 
