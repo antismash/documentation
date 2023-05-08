@@ -25,7 +25,7 @@ Please consult the FAQs before raising an [Issue](https://github.com/antismash/a
 ### How to Use antiSMASH - Local Installation
 
 If you need to run many analyses or custom analyses, please download and install a local copy of antiSMASH.
-Running large-scale analyses locally instead of on the our servers reduces the load and helps us to keep antiSMASH available for everybody.
+Running large-scale analyses locally instead of on the webservice reduces the load and helps us to keep antiSMASH available for everybody.
 
 For instructions on how to install antiSMASH locally, please see the [Install Guide](install.md).
 
