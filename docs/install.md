@@ -179,7 +179,7 @@ After the dependencies are installed, [create a Python virtual environment](#cre
 
 Install the following dependencies:
 
-- [diamond](https://github.com/bbuchfink/diamond) (versions 0.9.22, 0.9.24, 2.0.7, 2.0.9, and 2.0.15 tested)
+- [diamond](https://github.com/bbuchfink/diamond) (versions 0.9.22, 0.9.24, 2.0.7, 2.0.9, and 2.0.15 tested, 2.1.7 breaks with antiSMASH 7.0.0 and older)
 - [fasttree](http://www.microbesonline.org/fasttree/#Install) (versions 2.1.9 and 2.1.11 tested)
 - [GlimmerHMM](https://ccb.jhu.edu/software/glimmerhmm/) (version 3.0.4 tested)
 - [hmmer2](http://hmmer.janelia.org/download.html) (version 2.3.2 tested, append a 2 to all hmmer2 executables to avoid conflict with hmmer3 executable names, like hmmalign -> hmmalign2)
