@@ -1,4 +1,4 @@
-At the moment, there are thre options available to install antiSMASH:
+At the moment, there are three options available to install antiSMASH:
 
   - Using the Bioconda package.
   - Using one of the pre-built Docker images. A slightly larger download, but
