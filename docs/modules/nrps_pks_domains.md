@@ -31,7 +31,7 @@ and non-ribosomal peptide synthase (NRPS) related functions.
 |Epimerization domain |E | Epimerization domain| [Weber et al. 2009](#Weber2009)
 |F | F | Formylation domain|[Blin et al. 2017](#Blin2017)
 |FkbH | FkbH | FkbH-like domain|[Blin et al. 2017](#Blin2017)
-|GNAT | GNAT | GNAT domain|[Blin et al. 2017](#Blin2017)
+|GNAT | GNAT | Gcn5-related N-acetyltransferase | [Blin et al. 2017](#Blin2017)
 |Hal | Hal | Halogenase domain|[Blin et al. 2017](#Blin2017)
 |Heterocyclization | C | Heterocyclization domain| [Medema et al. 2011](#Medema2011)
 |Hyb_KS | KS | Hybrid ketosynthase|[Yadav et al. 2009](#Yadav2009)
