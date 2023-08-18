@@ -13,7 +13,7 @@ and non-ribosomal peptide synthase (NRPS) related functions.
 |Aminotran_3 | | Aminotransferase class III| [Pfam](https://www.ebi.ac.uk/interpro/entry/pfam/PF00202)
 |Aminotran_4 | | Aminotransferase class IV| [Pfam](https://www.ebi.ac.uk/interpro/entry/pfam/PF01063)
 |Aminotran_5 | | Aminotransferase class V| [Pfam](https://www.ebi.ac.uk/interpro/entry/pfam/PF00266)
-|AMP-binding | A | Adenylation domain| [Pfam](https://www.ebi.ac.uk/interpro/entry/pfam/PF00502)
+|AMP-binding | A | Adenylation domain| [Pfam](https://www.ebi.ac.uk/interpro/entry/pfam/PF00501)
 |A-OX | A | Adenylation domain with integrated oxidase| [Medema et al. 2011](#Medema2011)
 |B | B | Branching domain|[Blin et al. 2017](#Blin2017)
 |Beta_elim_lyase | SH | Beta-eliminating lyase |[Pfam](https://www.ebi.ac.uk/interpro/entry/pfam/PF01212)
