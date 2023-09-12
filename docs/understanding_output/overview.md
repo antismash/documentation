@@ -30,6 +30,6 @@ Following that is a table with a summary of each region found in the record, wit
 * **Most similar known cluster**: the closest compound from the MiBIG database (clicking this will take you to the MiBIG entry), along with its type (e.g. `t1pks+t3pks`)
 * **Similarity**: a percentage of genes within the closest known compound that have a significant BLAST hit to genes within the current region
 
-The last two columns containing comparisons to the MiBIG database will only be shown if antiSMASH was run with the *KnownClusterBlast* option.
+The last two columns containing comparisons to the MiBIG database will only be shown if antiSMASH was run with the [KnownClusterBlast](/modules/clusterblast/) option.
 
 Clicking anywhere in the row that is not already an external link will take you to the detailed results for that region.
