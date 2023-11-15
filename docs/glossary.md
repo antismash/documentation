@@ -12,6 +12,7 @@ types can be found below:
 |<span id="aminocoumarin">aminocoumarin</span>|Aminocoumarin|&lt;= 3.0|&lt;= 3.0|
 |<span id="aminopolycarboxylic-acid">aminopolycarboxylic-acid</span>|Aminopolycarboxylic acid metallophores (doi:10.1039/C8MT00009C)|7.0|7.0|
 |<span id="amglyccycl">amglyccycl</span>|Aminoglycoside/aminocyclitol|&lt;= 3.0|&lt;= 3.0|
+|<span id="archaeal-RiPP">archaeal-RiPP</span>|Archaeal RiPPs (doi:10.1021/jacs.2c00521 supplemental)|7.1|7.1|
 |<span id="arylpolyene">arylpolyene</span>|Aryl polyene|&lt;= 3.0|&lt;= 3.0|
 |<span id="betalactone">betalactone</span>|Beta-lactone containing protease inhibitor|5.0|5.0|
 |<span id="blactam">blactam</span>|&beta;-lactam|&lt;= 3.0|&lt;= 3.0|
@@ -21,6 +22,7 @@ types can be found below:
 |<span id="crocagin">crocagin</span>|Crocagin-like|7.0|7.0|
 |<span id="cyanobactin">cyanobactin</span>|Cyanobactins like patellamide (AY986476)|&lt;= 3.0|7.0|
 |<span id="cyclic-lactone-autoinducer">cyclic-lactone-autoinducer</span>|agrD-like cyclic lactone autoinducer peptides (AF001782)|6.0|6.0|
+|<span id="darobactin">darobactin</span>|Darobactin-like compounds|7.1|7.1|
 |<span id="ectoine">ectoine</span>|Ectoine|&lt;= 3.0|&lt;= 3.0|
 |<span id="epipeptide">epipeptide</span>|D-amino-acid containing RiPPs such as yydF (D78193)|6.0|6.0|
 |<span id="fatty_acid">fatty_acid</span>|Fatty acid (loose strictness, likely from primary metabolism)|&lt;= 3.0|4.2|
@@ -32,9 +34,13 @@ types can be found below:
 |<span id="halogenated">halogenated</span>|Halogenase-containing cluster, potentially generating a halogenated product|5.0|5.0|
 |<span id="hgle-ks"><span id="hgleks">hglE-KS</span></span>|Heterocyst glycolipid synthase-like PKS|5.0|5.0|
 |<span id="hserlactone">hserlactone</span>|Homoserine lactone|&lt;= 3.0|&lt;= 3.0|
+|<span id="hydrogen-cyanide">hydrogen-cyanide</span>|Hydrogen cyanide (AF208523, doi:10.1128/jb.182.24.6940-6949.20)|7.1|7.1|
+|<span id="HR-T2PKS">HR-T2PKS</span>|Highly reducing type II PKS like ishigamide and skyllamycin|7.1|7.1|
 |<span id="indole">indole</span>|Indole|&lt;= 3.0|4.0|
+|<span id="isocyanide">isocyanide</span>|Isocyanides (doi:10.1093/nar/gkad573)|7.1|7.1|
+|<span id="isocyanide-nrp">NRP with isocyanide</span>|Isocyanides (doi:0.1128/mBio.00785-18)|7.1|7.1|
 |<span id="lap">LAP</span>|Linear azol(in)e-containing peptides|&lt;= 3.0|6.0|
-|<span id="ladderane">ladderane</span>|Ladderane|&lt;= 3.0|&lt;= 3.0|
+|<span id="ladderane">ladderane</span>|Ladderane|&lt;= 3.0|7.1|
 |<span id="lanthipeptide-class-i">lanthipeptide class I</span>|Class I lanthipeptides like nisin|4.2|6.0|
 |<span id="lanthipeptide-class-ii">lanthipeptide class II</span>|Class II lanthipeptides like mutacin II (U40620)|4.2|6.0|
 |<span id="lanthipeptide-class-iii">lanthipeptide class III</span>|Class III lanthipeptides like labyrinthopeptin (FN178622)|4.2|6.0|
@@ -49,7 +55,7 @@ types can be found below:
 |<span id="mycosporine-like">mycosporine-like</span>|Molecules containing mycosporine-like amino acid|7.0|7.0|
 |<span id="naggn">NAGGN</span>|N-acetylglutaminylglutamine amide|5.0|5.0|
 |<span id="napaa">NAPAA</span>|Non-alpha poly-amino acids like e-Polylysin|6.0|7.0|
-|<span id="ni-siderophore"><span id="nrp-independent-siderophore">NI-siderophore</span></span>|NRPS-independent, IucA/IucC-like siderophores (*siderophore* prior to 7.0)|7.0|7.0|
+|<span id="ni-siderophore"><span id="nrp-independent-siderophore">NI-siderophore</span></span>|NRPS-independent, IucA/IucC-like siderophores (*siderophore* prior to 7.0)|7.0|7.1|
 |<span id="nrps">NRPS</span>|Non-ribosomal peptide synthetase|&lt;= 3.0|6.0|
 |<span id="nrps-like"><span id="nrpsfragment">NRPS-like</span></span>|NRPS-like fragment|5.0|5.0|
 |<span id="nrp-metallophore">NRP-metallophore</span>|Non-ribosomal peptide metallophores|7.0|7.0|
@@ -73,7 +79,7 @@ types can be found below:
 |<span id="rcdps">RCDPS</span>|Fungal Arginine-containing cyclic dipeptides|7.0|7.0|
 |<span id="redox-cofactor">redox-cofactor</span>|Redox-cofactors such as PQQ (NC_021985:1458906-1494876)|6.0|6.0|
 |<span id="resorcinol">resorcinol</span>|Resorcinol|&lt;= 3.0|&lt;= 3.0|
-|<span id="ripp-like">RiPP-like</span>|Other unspecified ribosomally synthesised and post-translationally modified peptide product (RiPP)|4.1|7.0|
+|<span id="ripp-like">RiPP-like</span>|Other unspecified ribosomally synthesised and post-translationally modified peptide product (RiPP)|4.1|7.1|
 |<span id="rre-containing">RRE-containing</span>|RRE-element containing cluster|6.0|6.0|
 |<span id="saccharide">saccharide</span>|Saccharide (loose strictness, likely from primary metabolism)|&lt;= 3.0|&lt;= 3.0|
 |<span id="sactipeptide">sactipeptide</span>|Sactipeptide|&lt;= 3.0|6.0|
@@ -87,6 +93,7 @@ types can be found below:
 |<span id="thiopeptide">thiopeptide</span>|Thiopeptide|4.2|5.0|
 |<span id="transatpks"><span id="transat-pks">transAT-PKS</span></span>|Trans-AT PKS|&lt;= 3.0|5.0|
 |<span id="transatpks-like"><span id="transat-pks-like">transAT-PKS-like</span></span>|Trans-AT PKS fragment, with trans-AT domain not found|&lt;= 5.0|5.0|
+|<span id="triceptide">triceptide</span>|Triceptides|7.1|7.1|
 |<span id="tropodithietic-acid">tropodithietic-acid</span>|Tropodithietic acid|5.0|5.0|
 
 
