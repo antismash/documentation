@@ -22,6 +22,7 @@ nav:
         - Installation: install.md
         - Starting command line runs: command_line.md
     - Change log:
+        - 7.1: changelog/7.1.md
         - 7.0: changelog/7.0.md
         - 6.1: changelog/6.1.md
         - 6.0: changelog/6.0.md
