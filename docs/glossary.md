@@ -117,7 +117,7 @@ The types of cluster within each ruleset are given below:
 |Label|Description|Added|Removed|Notes|
 |-----|-----------|:---:|:-----:|-----|
 |<span id="siderophore">siderophore</span>|Siderophore|&lt;= 3.0|7.0|Renamed to *NI-siderophore*|
-|<span id="bacteriocin">bacteriocin</span>|Bacteriocin or other unspecified ribosomally synthesised and post-translationally modified peptide product (RiPP)|4.1|6.0|Renamed to *RiPP-like*|
+|<span id="bacteriocin">bacteriocin</span>|Bacteriocin or other unspecified ribosomally synthesised and <br/> post-translationally modified peptide product (RiPP)|4.1|6.0|Renamed to *RiPP-like*|
 |<span id="fused">fused</span>|Pheganomycin-style protein ligase-containing cluster|4.0|6.0|Renamed to *guanidinotides*|
 |<span id="head_to_tail">head_to_tail</span>|Head-to-tail cyclised RiPP (subtilosin-like)|&lt;= 3.0|6.0|Merged into *sactipeptides*|
 |<span id="lanthidin">lanthidin</span>|Glycosylated lanthipeptide/linaridin hybrids like MT210103|5.1|6.0|Renamed to *lanthipeptide class V*|
@@ -127,5 +127,5 @@ The types of cluster within each ruleset are given below:
 |<span id="microcin">microcin</span>|Microcin|&lt;= 3.0|5.0|Merged into *lasso peptide*|
 |<span id="cf_saccharide">cf_saccharide</span>|Possible saccharide|&lt;= 3.0|5.0|Renamed to *saccharide*|
 |<span id="cf_fatty_acid">cf_fatty_acid</span>|Possible fatty acid|&lt;= 3.0|5.0|Renamed to *fatty_acid*|
-|<span id="cf_putative">cf_putative</span>|Putative cluster of unknown type identified with the ClusterFinder algorithm|&lt;= 3.0|5.0|These predictions are now subregions, not clusters|
+|<span id="cf_putative">cf_putative</span>|Putative cluster of unknown type identified <br/> with the ClusterFinder algorithm|&lt;= 3.0|5.0|These predictions are now subregions, not clusters|
 
