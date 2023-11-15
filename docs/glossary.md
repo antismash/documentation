@@ -1,17 +1,23 @@
 #Protocluster Types
 
-antiSMASH uses some abbreviations internally to refer to the different
-types of secondary metabolite clusters, a short explanation of the different
-types can be found below:
+antiSMASH uses some abbreviations internally and in outputs to refer to the different
+types of secondary metabolite clusters detected.
 
-###Current Types
+There are three strictness levels for cluster detection: strict, relaxed, and loose.
+Each level includes the more strict levels.
+The types of cluster within each ruleset are given below:
+
+##Current Types
+
+
+### Strict
 |Label|Description|Added|Last updated|
 |-----|-----------|:---:|:----------:|
 |<span id="2dos">2dos</span>|2-deoxy-streptamine aminoglycoside|7.0|7.0|
 |<span id="acyl_amino_acids">acyl_amino_acids</span>|N-acyl amino acid|4.0|4.1|
+|<span id="amglyccycl">amglyccycl</span>|Aminoglycoside/aminocyclitol|&lt;= 3.0|&lt;= 3.0|
 |<span id="aminocoumarin">aminocoumarin</span>|Aminocoumarin|&lt;= 3.0|&lt;= 3.0|
 |<span id="aminopolycarboxylic-acid">aminopolycarboxylic-acid</span>|Aminopolycarboxylic acid metallophores (doi:10.1039/C8MT00009C)|7.0|7.0|
-|<span id="amglyccycl">amglyccycl</span>|Aminoglycoside/aminocyclitol|&lt;= 3.0|&lt;= 3.0|
 |<span id="archaeal-RiPP">archaeal-RiPP</span>|Archaeal RiPPs (doi:10.1021/jacs.2c00521 supplemental)|7.1|7.1|
 |<span id="arylpolyene">arylpolyene</span>|Aryl polyene|&lt;= 3.0|&lt;= 3.0|
 |<span id="betalactone">betalactone</span>|Beta-lactone containing protease inhibitor|5.0|5.0|
@@ -25,14 +31,12 @@ types can be found below:
 |<span id="darobactin">darobactin</span>|Darobactin-like compounds|7.1|7.1|
 |<span id="ectoine">ectoine</span>|Ectoine|&lt;= 3.0|&lt;= 3.0|
 |<span id="epipeptide">epipeptide</span>|D-amino-acid containing RiPPs such as yydF (D78193)|6.0|6.0|
-|<span id="fatty_acid">fatty_acid</span>|Fatty acid (loose strictness, likely from primary metabolism)|&lt;= 3.0|4.2|
-|<span id="furan">furan</span>|Furan|&lt;= 3.0|5.0|
 |<span id="fungal-ripp">fungal-RiPP</span>|Fungal RiPP with POP or UstH peptidase types and a modification|5.0|5.0|
-|<span id="fungal-ripp-like">fungal-RiPP-like</span>|Fungal RiPP-likes|7.0|7.0|
+|<span id="furan">furan</span>|Furan|&lt;= 3.0|5.0|
 |<span id="glycocin">glycocin</span>|Glycocin|&lt;= 3.0|&lt;= 3.0|
 |<span id="guanidinotides">guanidinotides</span>|Pheganomycin-style protein ligase-containing cluster|4.0|6.0|
-|<span id="halogenated">halogenated</span>|Halogenase-containing cluster, potentially generating a halogenated product|5.0|5.0|
 |<span id="hgle-ks"><span id="hgleks">hglE-KS</span></span>|Heterocyst glycolipid synthase-like PKS|5.0|5.0|
+|<span id="HR-T2PKS">HR-T2PKS</span>|Highly reducing type II PKS like ishigamide and skyllamycin|7.1|7.1|
 |<span id="hserlactone">hserlactone</span>|Homoserine lactone|&lt;= 3.0|&lt;= 3.0|
 |<span id="hydrogen-cyanide">hydrogen-cyanide</span>|Hydrogen cyanide (AF208523, doi:10.1128/jb.182.24.6940-6949.20)|7.1|7.1|
 |<span id="HR-T2PKS">HR-T2PKS</span>|Highly reducing type II PKS like ishigamide and skyllamycin|7.1|7.1|
@@ -57,7 +61,6 @@ types can be found below:
 |<span id="napaa">NAPAA</span>|Non-alpha poly-amino acids like e-Polylysin|6.0|7.0|
 |<span id="ni-siderophore"><span id="nrp-independent-siderophore">NI-siderophore</span></span>|NRPS-independent, IucA/IucC-like siderophores (*siderophore* prior to 7.0)|7.0|7.1|
 |<span id="nrps">NRPS</span>|Non-ribosomal peptide synthetase|&lt;= 3.0|6.0|
-|<span id="nrps-like"><span id="nrpsfragment">NRPS-like</span></span>|NRPS-like fragment|5.0|5.0|
 |<span id="nrp-metallophore">NRP-metallophore</span>|Non-ribosomal peptide metallophores|7.0|7.0|
 |<span id="nucleoside">nucleoside</span>|Nucleoside|&lt;= 3.0|5.0|
 |<span id="oligosaccharide">oligosaccharide</span>|Oligosaccharide|&lt;= 3.0|&lt;= 3.0|
@@ -67,8 +70,6 @@ types can be found below:
 |<span id="phenazine">phenazine</span>|Phenazine|&lt;= 3.0|&lt;= 3.0|
 |<span id="phosphoglycolipid">phosphoglycolipid</span>|Phosphoglycolipid|&lt;= 3.0|&lt;= 3.0|
 |<span id="phosphonate">phosphonate</span>|Phosphonate|&lt;= 3.0|7.0|
-|<span id="phosphonate-like">phosphonate-like</span>|Phosphonate-like (prior to 7.0 this was the phosphonate rule)|7.0|7.0|
-|<span id="pks-like">PKS-like</span>|Other types of PKS|5.0|5.0|
 |<span id="ppys-ks"><span id="ppysks">PpyS-KS</span></span>|PPY-like pyrone|4.2|4.2|
 |<span id="prodigiosin">prodigiosin</span>|Serratia-type non-traditional PKS prodigiosin biosynthesis pathway|6.0|6.0|
 |<span id="proteusin">proteusin</span>|Proteusin|&lt;= 3.0|&lt;= 3.0 |
@@ -79,8 +80,6 @@ types can be found below:
 |<span id="rcdps">RCDPS</span>|Fungal Arginine-containing cyclic dipeptides|7.0|7.0|
 |<span id="redox-cofactor">redox-cofactor</span>|Redox-cofactors such as PQQ (NC_021985:1458906-1494876)|6.0|6.0|
 |<span id="resorcinol">resorcinol</span>|Resorcinol|&lt;= 3.0|&lt;= 3.0|
-|<span id="ripp-like">RiPP-like</span>|Other unspecified ribosomally synthesised and post-translationally modified peptide product (RiPP)|4.1|7.1|
-|<span id="rre-containing">RRE-containing</span>|RRE-element containing cluster|6.0|6.0|
 |<span id="saccharide">saccharide</span>|Saccharide (loose strictness, likely from primary metabolism)|&lt;= 3.0|&lt;= 3.0|
 |<span id="sactipeptide">sactipeptide</span>|Sactipeptide|&lt;= 3.0|6.0|
 |<span id="spliceotide">spliceotide</span>|RiPPs containing plpX type spliceases (NZ_KB235920:17899-42115)|6.0|6.0|
@@ -92,13 +91,28 @@ types can be found below:
 |<span id="thioamide-nrp">thioamide-NRP</span>|Thioamide-containing non-ribosomal peptide|5.0|5.0|
 |<span id="thiopeptide">thiopeptide</span>|Thiopeptide|4.2|5.0|
 |<span id="transatpks"><span id="transat-pks">transAT-PKS</span></span>|Trans-AT PKS|&lt;= 3.0|5.0|
-|<span id="transatpks-like"><span id="transat-pks-like">transAT-PKS-like</span></span>|Trans-AT PKS fragment, with trans-AT domain not found|&lt;= 5.0|5.0|
 |<span id="triceptide">triceptide</span>|Triceptides|7.1|7.1|
 |<span id="tropodithietic-acid">tropodithietic-acid</span>|Tropodithietic acid|5.0|5.0|
 
+### Relaxed
+|Label|Description|Added|Last updated|
+|-----|-----------|:---:|:----------:|
+|<span id="fungal-ripp-like">fungal-RiPP-like</span>|Fungal RiPP-likes|7.0|7.0|
+|<span id="nrps-like"><span id="nrpsfragment">NRPS-like</span></span>|NRPS-like fragment|5.0|5.0|
+|<span id="phosphonate-like">phosphonate-like</span>|Phosphonate-like (prior to 7.0 this was the phosphonate rule)|7.0|7.0|
+|<span id="pks-like">PKS-like</span>|Other types of PKS|5.0|5.0|
+|<span id="ripp-like">RiPP-like</span>|Other unspecified ribosomally synthesised and post-translationally modified peptide product (RiPP)|4.1|7.1|
+|<span id="rre-containing">RRE-containing</span>|RRE-element containing cluster|6.0|6.0|
+|<span id="transatpks-like"><span id="transat-pks-like">transAT-PKS-like</span></span>|Trans-AT PKS fragment, with trans-AT domain not found|&lt;= 5.0|5.0|
+
+### Loose
+|Label|Description|Added|Last updated|
+|-----|-----------|:---:|:----------:|
+|<span id="fatty_acid">fatty_acid</span>|Fatty acid (loose strictness, likely from primary metabolism)|&lt;= 3.0|4.2|
+|<span id="halogenated">halogenated</span>|Halogenase-containing cluster, potentially generating a halogenated product|5.0|5.0|
 
 
-###Obsolete/Previous Types
+##Obsolete/Previous Types
 
 |Label|Description|Added|Removed|Notes|
 |-----|-----------|:---:|:-----:|-----|
