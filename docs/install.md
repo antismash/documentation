@@ -36,10 +36,11 @@ conda activate antismash
 antismash my_input.gbk
 ```
 
-## Using Docker
+## Using Docker (or podman)
 
 If you're not on Debian, but don't want to bother with the full-blown manual
-installation, there are two docker images you can use.
+installation, there are two docker images you can use. To use the wrapper scripts with podman,
+just replace all mentions of "docker" in the commands below with "podman".
 
 ### antiSMASH standalone
 
@@ -78,7 +79,7 @@ Again the wrapper script assumes your databases live in `/data/databases`. If yo
 a different location, just provide that to the `download_antismash_databases` script as the parameter.
 
 ```bash
-curl -q https://dl.secondarymetabolites.org/releases/latest/download_antismash_databases > ~/bin/download_antismash_databases
+curl -q https://dl.secondarymetabolites.org/releases/latest/download_antismash_databases_docker > ~/bin/download_antismash_databases
 chmod a+x ~/bin/download_antismash_databases
 download_antismash_databases
 ```
