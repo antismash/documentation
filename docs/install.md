@@ -12,11 +12,6 @@ At the moment, there are three options available to install antiSMASH:
 
 ## Using Bioconda
 
-WARNING: Bioconda does not currently provide a working
-nrpys package for antiSMASH 7 (see <https://github.com/bioconda/bioconda-recipes/issues/44377>).
-The latest antiSMASH version available on bioconda is 6.1.1, so if you require
-a newer version, consider alternative install methods mentioned later on this page.
-
 Bioconda is a channel for the [conda](http://conda.pydata.org/docs/intro.html)
 package manager with a focus on bioinformatics software. Once you have [bioconda
 installed](https://bioconda.github.io/index.html), install antiSMASH with the following:
