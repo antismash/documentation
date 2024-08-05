@@ -101,7 +101,7 @@ The types of cluster within each ruleset are given below:
 |<span id="nrps-like"><span id="nrpsfragment">NRPS-like</span></span>|NRPS-like fragment|5.0|5.0|
 |<span id="phosphonate-like">phosphonate-like</span>|Phosphonate-like (prior to 7.0 this was the phosphonate rule)|7.0|7.0|
 |<span id="pks-like">PKS-like</span>|Other types of PKS|5.0|5.0|
-|<span id="ripp-like">RiPP-like</span>|Other unspecified ribosomally synthesised and post-translationally modified peptide product (RiPP)|4.1|7.1|
+|<span id="ripp-like">RiPP-like</span>|Other unspecified ribosomally synthesised and post-translationally modified peptide product (RiPP)|4.1|7.0|
 |<span id="rre-containing">RRE-containing</span>|RRE-element containing cluster|6.0|6.0|
 |<span id="transatpks-like"><span id="transat-pks-like">transAT-PKS-like</span></span>|Trans-AT PKS fragment, with trans-AT domain not found|&lt;= 5.0|5.0|
 
