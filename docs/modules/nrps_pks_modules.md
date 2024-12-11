@@ -47,10 +47,10 @@ In the examples above, the adenylation domain (`A`) is predicted to load leucine
 
 ![module-types](../img/modules_types.png)
 
-Not all modules will be considered *complete* like `orf_R7` in the image above.
+Along with *complete* modules, e.g. in `orf_R7` above, some *incomplete* modules are annotated (e.g. `orf_R6`)
 It is common to have large fragments of domains and multiple domains that by themselves don't complete a module.
 In cases where these domains are found and cannot form a *complete* module, an *incomplete* module will be formed.
-Incomplete modules are shown with a dashed outline and will always show component domains, an example is `orf_R6` in the image above.
+Incomplete modules are shown with a dashed outline and will always show component domains.
 In the case of a loader domain without a carrier protein, the predicted substrate that would be loaded is not considered for a candidate cluster's polymer prediction.
 
 There are also occasions, even in a complete module, where no consensus can be found for the prediction of a loaded substrate.
@@ -82,8 +82,8 @@ In this visualistion, the gene ordering is as predicted for that particular cand
 
 Gene arrows, which can be clicked to highlight that gene in the cluster viewer, indicate the extent of genes.
 
-Modules are number, e.g. `M 5`, and shown with lines that indicate the extent of the module.
+Modules are numbered, e.g. `M 5`, and shown with lines that indicate the extent of the module.
 In the example above, module 7 is a cross-gene module, with the module line crossing the boundaries of `kirAIII` and the gene to the right.
 Below the module number is the predicted monomer of the module.
 
-A legend is included in the visualisation to explain the various notations, one example of which is the inactive KR domain in module 8.
+A legend is included in the visualisation to explain the various notations, one example of which is the inactive `KR` domain in module 8.
