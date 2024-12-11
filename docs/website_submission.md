@@ -65,11 +65,12 @@ screenshot from the "Extra features" panel:
 **KnownClusterBlast analysis**: the identified clusters are searched against the [MIBiG repository](https://mibig.secondarymetabolites.org). 
 MIBiG is a hand curated data collection of biosynthetic gene clusters, which have been experimentally characterized.
 
-**Subcluster Blast analysis**: the identified clusters are searched against a [database](https://bitbucket.org/antismash/antismash/src/bfa2f1c0fe97de910c19ee2be241b415e6fa97bd/antismash/generic_modules/subclusterblast/subclusters.txt?at=master&fileviewer=file-view-default) containing 
+**Subcluster Blast analysis**: the identified clusters are searched against a
+[database](https://github.com/antismash/antismash/blob/master/antismash/modules/clusterblast/data/sub/clusters.txt) containing
 operons involved in the biosynthesis of common secondary metabolite building blocks 
 (e.g. the biosynthesis of non-proteinogenic amino acids).
 
-The following antiSMASH features always run on the background:
+The following antiSMASH features always run in the background:
 
 **smCOG analysis**: the analysis of secondary metabolism gene families (smCOGs) attempts to allocate each gene 
 in the detected gene clusters to a secondary metabolism-specific gene family using profile 
@@ -81,7 +82,7 @@ the putative function of the gene products. smCOG analysis results can be used f
 
 **Active site finder**: active sites of several highly conserved biosynthetic enzymes are detected and variations of the active sites are reported.
 
-**Detect TTA codons**: high-GC containing bacterial sequences (by default in antiSMASH >65%), for example from *Streptomycetes*, 
+**TTA codon detection**: high-GC containing bacterial sequences (by default in antiSMASH >65%), for example from *Streptomycetes*,
 contain the rare Leu-codon “TTA” as a mean for post-transcriptional regulation by limiting/controlling the 
 amount of TTA-tNRA in the cell. This type of regulation is commonly found in secondary metabolite BGCs. 
 This feature will annotate such TTA codons in the identified BGCs.
@@ -100,48 +101,26 @@ a large database of predicted protein sequences from secondary metabolite
 biosynthetic gene clusters, and pools the results to identify the gene clusters
 that are most homologous to the gene cluster that was detected in your query
 nucleotide sequence.
-Please note that selecting this option increases the runtime significantly.
+Enabling this option will increase the runtime of a submission.
 
 **Cluster Pfam analysis**: each gene product encoded in the detected BGCs is analyzed against [the PFAM database](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4702930/). 
 Hits are annotated in the final Genbank/EMBL files that can be downloaded after the analysis is finished. 
 Please note that these results are not displayed on the antiSMASH HTML results page but they are present in the results genbank file that can be downloaded. 
-Also, selecting this option normally increases the runtime.
+Enabling this option will increase the runtime of a submission.
 
-**Pfam-based GO term annotation**: this is annotating the Cluster Pfam analysis described above with [GO term annotations](http://www.geneontology.org). 
-Please note that these results are not displayed on the antiSMASH HTML results page but they are present in the results genbank file that can be downloaded 
-(see "Understanding the output" section of the documentation for instructions on how to download the results). 
-Also, selecting this option normally increases the runtime. 
+**Pfam-based GO term annotation**: this option annotates the results of the Cluster Pfam analysis, described above, with [GO term annotations](http://www.geneontology.org).
+These results are displayed within the Pfam domains section of the antiSMASH HTML results, by emphasising the borders of the relevant domains.
+See [Understanding the output](../understanding_output/results) for instructions on how to download the results.
 
-Note on ClusterFinder
----------------------
-Due to very high runtime requirements and our observation that results generated with the ClusterFinder 
-option were often misinterpreted, we no longer support [ClusterFinder](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4123684/) via the antiSMASH web interface. 
-If you are interested in ClusterFinder (and are aware on how to interpret the data), it still is 
-included in the download version of antiSMASH that runs locally.
 
 FungiSMASH
 ----------
-The fungal version of AntiSmash is [FungiSMASH](https://fungismash.secondarymetabolites.org/#!/start) and it contains one 
-extra fungal sequence specific feature:
+The fungal version of antiSMASH, [FungiSMASH](https://fungismash.secondarymetabolites.org/#!/start),
+has some small modifications to better support detection and analysis.
 
-![alt text][Fig5]
-
-**Cluster-border prediction based on transcription factor binding sites (CASSIS)**: In fungi, 
-it is possible to predict clustered genes by identifying highly conserved regulator binding motifs in the promotor 
-regions of the biosynthesis genes. The Cluster Assignment by Islands of Sites or [CASSIS algorithm](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4824125/) 
-can detect such motifs and thus predict core-regions of fungal BGCs. 
-In bacteria, these motifs unfortunately are less conserved, thus this approach only works on fungal sequences.
-
-Submitting your query
----------------------
-After you set up your online antiSMASH job, you can click on submit on the bottom of the page and 
-the calculations for the identification and analysis of the gene clusters will be carried out on our servers. 
-When the job is finished – and an email address was provided – the user gets a notification email that the results are available. 
-Otherwise, you will need to go to the bookmarked link to check if the analysis has finished.
 
 [Fig1]:img/antiSMASHentrypage.png
 [Fig2]:img/notifications.png
 [Fig3]:img/datatype.png
 [Fig4]:img/parameters.png
-[Fig5]:img/fungismash.png
 
