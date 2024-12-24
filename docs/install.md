@@ -12,6 +12,9 @@ At the moment, there are three options available to install antiSMASH:
 
 ## Using Bioconda
 
+**Note**: The bioconda packages are built and updated by volunteers from the bioconda
+project and might lag behind the official antiSMASH releases.
+
 Bioconda is a channel for the [conda](http://conda.pydata.org/docs/intro.html)
 package manager with a focus on bioinformatics software. Once you have [bioconda
 installed](https://bioconda.github.io/index.html), install antiSMASH with the following:
