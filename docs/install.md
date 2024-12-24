@@ -112,9 +112,14 @@ sudo apt-get update
 ```
 then install the binaries themselves
 ```bash
-sudo apt-get install hmmer2 hmmer diamond-aligner fasttree prodigal ncbi-blast+ muscle glimmerhmm
+sudo apt-get install hmmer2 hmmer diamond-aligner fasttree prodigal ncbi-blast+
 ```
-If you want to use CASSIS or the full RODEO analysis for RiPPs and agree to the [MEME license](http://meme-suite.org/doc/copyright.html), add `meme-suite` to that list.
+For versions older than 8.0, add `glimmerhmm` if you want to support fungal gene detection, but we
+strongly recommend using a purpose-built fungal gene finding tool instead.
+
+For versions older than 7.0, add `muscle`.
+
+If you want to use CASSIS or the full RODEO analysis for RiPPs and agree to the [MEME license](http://meme-suite.org/doc/copyright.html), add `meme-suite`.
 
 After the dependencies are installed, [create a Python virtual environment](#create-a-python-virtual-environment).
 
@@ -127,8 +132,12 @@ installed](https://bioconda.github.io/index.html), install the dependencies:
 ```bash
 conda create -n antismash
 conda activate antismash
-conda install hmmer2 hmmer diamond fasttree prodigal blast muscle glimmerhmm
+conda install hmmer2 hmmer diamond fasttree prodigal blast
 ```
+For versions older than 8.0, add `glimmerhmm` if you want to support fungal gene detection, but we
+strongly recommend using a purpose-built fungal gene finding tool instead.
+
+For versions older than 7.0, add `bioconda/label/cf201901::muscle`.
 
 If you want to use CASSIS or the full RODEO analysis for RiPPs and agree to the [MEME license](http://meme-suite.org/doc/copyright.html),
 also run `conda install meme==4.11.2`.
@@ -153,8 +162,13 @@ brew tap brewsci/bio
 ```
 then install the binaries themselves
 ```bash
-brew install hmmer2 hmmer diamond fasttree prodigal blast muscle brewsci/science/glimmerhmm
+brew install hmmer2 hmmer diamond fasttree prodigal blast
 ```
+For versions older than 8.0, add `brewsci/science/glimmerhmm` if you want to support fungal gene detection, but we
+strongly recommend using a purpose-built fungal gene finding tool instead.
+
+Versions older than 7.0 also need `muscle`, but homebrew only ships version 5 of that tool which no longer supports
+the features antiSMASH requires `muscle` for. We recommend using a more recent antiSMASH or building muscle from source.
 
 Unfortunately, Homebrew doesn't fix the file name conflicts between the hmmer and hmmer2 packages,
 so to have both tools available, run the following:
@@ -184,7 +198,6 @@ Install the following dependencies:
 
 - [diamond](https://github.com/bbuchfink/diamond) (versions 0.9.22, 0.9.24, 2.0.7, 2.0.9, and 2.0.15 tested, 2.1.7 breaks with antiSMASH 7.0.0 and older)
 - [fasttree](http://www.microbesonline.org/fasttree/#Install) (versions 2.1.9 and 2.1.11 tested)
-- [GlimmerHMM](https://ccb.jhu.edu/software/glimmerhmm/) (version 3.0.4 tested)
 - [hmmer2](http://hmmer.janelia.org/download.html) (version 2.3.2 tested, append a 2 to all hmmer2 executables to avoid conflict with hmmer3 executable names, like hmmalign -> hmmalign2)
 - [hmmer3](http://hmmer.janelia.org/download.html) (3.1b2 tested)
 - [meme](http://meme-suite.org/meme-software/) (version 4.11.2 required for meme specifically, which is only used in the cassis module, fimo tested with 5.5.2)
@@ -192,6 +205,9 @@ Install the following dependencies:
 - [prodigal](http://prodigal.ornl.gov/) (version 2.6.3 tested)
 - python (versions 3.9, 3.10, and 3.11 tested, any version >= 3.9.0 should work)
 - python-virtualenv (not needed, but highly recommended)
+
+For versions of antiSMASH prior to 8.0, there are additional requirements:
+- [GlimmerHMM](https://ccb.jhu.edu/software/glimmerhmm/) (version 3.0.4 tested)
 
 For versions of antiSMASH prior to 7.0, there are additional requirements:
 - [muscle](http://www.drive5.com/muscle/downloads.htm) (versions 3.8.31 and 3.8.1551 tested, version 5 and above are not compatible)
