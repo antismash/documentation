@@ -162,27 +162,13 @@ brew tap brewsci/bio
 ```
 then install the binaries themselves
 ```bash
-brew install hmmer2 hmmer diamond fasttree prodigal blast
+brew install brewsci/bio/hmmer@2 hmmer diamond fasttree prodigal blast
 ```
 For versions older than 8.0, add `brewsci/science/glimmerhmm` if you want to support fungal gene detection, but we
 strongly recommend using a purpose-built fungal gene finding tool instead.
 
 Versions older than 7.0 also need `muscle`, but homebrew only ships version 5 of that tool which no longer supports
 the features antiSMASH requires `muscle` for. We recommend using a more recent antiSMASH or building muscle from source.
-
-Unfortunately, Homebrew doesn't fix the file name conflicts between the hmmer and hmmer2 packages,
-so to have both tools available, run the following:
-```bash
-export HMMER2_BINDIR="$(brew --prefix)/opt/hmmer2/bin"
-export BREW_BINDIR="$(dirname $(brew link -n hmmer2 | head -n2 | tail -n1))"
-pushd ${BREW_BINDIR}
-for FNAME in ${HMMER2_BINDIR}/*; do
-    BINARY=$(basename $FNAME)
-    ln -s $FNAME ${BINARY/hmm/hmm2}
-done
-popd
-unset HMMER2_BINDIR BREW_BINDIR
-```
 
 If you want to use CASSIS or the full RODEO analysis for RiPPs and agree to the [MEME license](http://meme-suite.org/doc/copyright.html), run
 ```bash
