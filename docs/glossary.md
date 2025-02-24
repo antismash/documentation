@@ -23,6 +23,7 @@ The types of cluster within each ruleset are given below:
 |<span id="atropopeptide">atropopeptide</span>|Atropopeptide RiPPs, e.g. scabrirubin and tryptorubin|8.0 beta|8.0 beta|
 |<span id="azoxy-crosslink">azoxy-crosslink</span>|axoxy compounds formed by carboxilic cross-link|8.0 beta|8.0 beta|
 |<span id="azoxy-dimer">azoxy-dimer</span>|axoxy compounds formed by dimerisation|8.0 beta|8.0 beta|
+|<span id="benzoxazole">benzoxazole</span>|Benzoxazoles|8.0 beta|8.0 beta|
 |<span id="betalactone">betalactone</span>|Beta-lactone containing protease inhibitor|5.0|5.0|
 |<span id="blactam">blactam</span>|&beta;-lactam|&lt;= 3.0|&lt;= 3.0|
 |<span id="bottromycin">bottromycin</span>|Bottromycin|&lt;= 3.0|&lt;= 3.0|
@@ -51,12 +52,13 @@ The types of cluster within each ruleset are given below:
 |<span id="isocyanide">isocyanide</span>|Isocyanides (doi:10.1093/nar/gkad573)|7.1|7.1|
 |<span id="isocyanide-nrp">NRP with isocyanide</span>|Isocyanides (doi:0.1128/mBio.00785-18)|7.1|7.1|
 |<span id="ladderane">ladderane</span>|Ladderane|&lt;= 3.0|7.1|
-|<span id="lanthipeptide-class-i">lanthipeptide class I</span>|Class I lanthipeptides like nisin|4.2|6.0|
+|<span id="lanthipeptide-class-i">lanthipeptide class I</span>|Class I lanthipeptides like nisin|4.2|8.0 beta|
 |<span id="lanthipeptide-class-ii">lanthipeptide class II</span>|Class II lanthipeptides like mutacin II (U40620)|4.2|6.0|
 |<span id="lanthipeptide-class-iii">lanthipeptide class III</span>|Class III lanthipeptides like labyrinthopeptin (FN178622)|4.2|6.0|
 |<span id="lanthipeptide-class-iv">lanthipeptide class IV</span>|Class IV lanthipeptides like venezuelin (HQ328852)|4.2|6.0|
 |<span id="lanthipeptide-class-v">lanthipeptide class V</span>|Glycosylated lanthipeptide/linaridin hybrids like MT210103|5.1|6.0|
 |<span id="lassopeptide">lassopeptide</span>|Lasso peptide|&lt;= 3.0|5.0|
+|<span id="leupeptin">leupeptin</span>|leupeptin-like compounds|8.0 beta|8.0 beta|
 |<span id="linaridin">linaridin</span>|Linear arid peptide such as cypemycin (HQ148718) and salinipeptin (MG788286)|&lt;= 3.0|&lt;= 3.0|
 |<span id="lincosamides">lincosamides</span>|NRPS-adjacent biosynthesis of lincosamides|8.0 beta|8.0 beta|
 |<span id="lipolanthine">lipolanthine</span>|Lanthipeptide class containing N-terminal fatty acids such as MG673929|5.0|5.0|
