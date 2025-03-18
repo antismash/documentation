@@ -18,14 +18,18 @@ It is normal to have multiple genes hitting for some types of genes (e.g. modula
 
 ### Ranking system
 
-Reference areas are sorted first based on an empirical similarity score `S = h + H + s + S + B`, in which:
+Reference areas are sorted based on an empirical similarity score and then,
+in the case of any ties, cumulative blast score.
+
+The emprical similarity score is calculated as `h + H + s + S + B`, in which:
+
 - `h` is the number of query genes with a significant hit
 - `H` is the number of core query genes with a significant hit
 - `s` is the number of gene pairs with conserved synteny
 - `S` is the number of gene pairs with conserved synteny involving a core gene
-- and `B` is a core gene bonus
+- `B` is a core gene bonus
 
-If the similarity scores are equal, the hits are subsequently ranked based on
+If the similarity scores are equal for multiple references, they are then ranked based on
 the cumulative BlastP bit scores between the gene clusters.
 
 ### Similarity percentage
