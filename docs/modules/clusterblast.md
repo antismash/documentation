@@ -12,7 +12,7 @@ algorithm and results visualisation, varying only in reference dataset:
 
 Genes with matching colours are interrelated.
 Percentage identity values per hit are shown when clicking the gene in question,
-with a minimum percentage identity between genes of 30%.
+with a minimum percentage identity between genes of 45%.
 
 It is normal to have multiple genes hitting for some types of genes (e.g. modular systems such as NRPS or Type I PKS clusters).
 
