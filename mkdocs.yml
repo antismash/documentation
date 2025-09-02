@@ -9,6 +9,10 @@ nav:
         - Overview page: understanding_output/overview.md
         - Results page: understanding_output/results.md
       - Loading external results: sideloading.md
+      - FAQ: faq.md
+      - Common issues: common_issues.md
+      - Glossary: glossary.md
+      - About: about.md
     - Module-specific information:
        - BGC detection: clusterrules.md
        - ClusterBlast: modules/clusterblast.md
@@ -29,9 +33,6 @@ nav:
         - 6.0: changelog/6.0.md
         - 5.2: changelog/5.2.md
         - 5.1: changelog/5.1.md
-    - FAQ: faq.md
-    - Glossary: glossary.md
-    - About: about.md
 theme:
     name: readthedocs
     custom_dir: custom_theme
