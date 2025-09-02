@@ -1,4 +1,6 @@
 site_name: antiSMASH Documentation
+repo_url: https://github.com/antismash/documentation
+site_author: antiSMASH developers
 nav:
     - Home: index.md
     - Using antiSMASH:

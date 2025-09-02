@@ -2,6 +2,9 @@
 
 {% block footer %}
 <hr>
+{% if config.repo_url %}
+<small><a href="{{ config.repo_url }}/issues/new">Suggest changes</a><br></small>
+{% endif %}
 <p>{% if config.copyright %}
 <small>{{ config.copyright }}<br></small>
 {% endif %}
