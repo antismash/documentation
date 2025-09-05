@@ -13,7 +13,7 @@ nav:
       - Loading external results: sideloading.md
       - FAQ: faq.md
       - Common issues: common_issues.md
-      - Glossary: glossary.md
+      - Glossary of protocluster types: glossary.md
       - About: about.md
     - Module-specific information:
        - BGC detection: clusterrules.md
