@@ -22,8 +22,8 @@ The types of cluster within each ruleset are given below:
 |<span id="arylpolyene">arylpolyene</span>|Aryl polyene|&lt;= 3.0|&lt;= 3.0|
 |<span id="atropopeptide">atropopeptide</span>|Atropopeptide RiPPs, e.g. scabrirubin and tryptorubin|8.0|8.0|
 |<span id="azole-containig-RiPP">azole-containing-RiPP</span>|(Thio)azol(in)e-containing peptides, linear and macrocyclic|8.0|8.0|
-|<span id="azoxy-crosslink">azoxy-crosslink</span>|Axoxy compounds formed by carboxilic cross-link|8.0|8.0|
-|<span id="azoxy-dimer">azoxy-dimer</span>|Axoxy compounds formed by dimerisation|8.0|8.0|
+|<span id="azoxy-crosslink">azoxy-crosslink</span>|Azoxy compounds formed by carboxilic cross-link|8.0|8.0|
+|<span id="azoxy-dimer">azoxy-dimer</span>|Azoxy compounds formed by dimerisation|8.0|8.0|
 |<span id="benzoxazole">benzoxazole</span>|Benzoxazoles|8.0|8.0|
 |<span id="betalactone">betalactone</span>|Beta-lactone containing protease inhibitor|5.0|5.0|
 |<span id="blactam">blactam</span>|&beta;-lactam|&lt;= 3.0|&lt;= 3.0|
