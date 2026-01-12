@@ -20,7 +20,7 @@ package manager with a focus on bioinformatics software. Once you have [bioconda
 installed](https://bioconda.github.io/index.html), install antiSMASH with the following:
 
 ```bash
-conda create -n antismash antismash
+conda create -n antismash antismash biopython=1.77
 conda activate antismash
 download-antismash-databases
 conda deactivate
